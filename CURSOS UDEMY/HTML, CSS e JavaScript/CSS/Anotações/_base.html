@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Lucas">
+    <!--Autor da página-->
+    
+    <meta name="description" content="...">
+    <!--Descrição da página, texto mostrado quando é feito uma pesquisa sobre a página, também usado pelos mecanismos de busca-->
+    
+    <meta name="keywords" content="palavras-chave">
+    <!--palavras-chave sobre a page-->
+
+    <link rel="stylesheet" href="style.css">
+    <title>Anotações</title>
+</head>
+<body>
+    <header>
+
+        <h1>Fazendo Anotações</h1>
+
+    </header>
+
+    <main>
+            <h2>Textos</h2>
+        <section>
+            <p class="one">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ullam a blanditiis nulla id quos eveniet qui, est, adipisci odio reiciendis totam aliquid nemo tempora. Error cupiditate saepe veritatis dolor.
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illo magni nobis quidem, commodi tenetur illum repellendus tempore fugit in quaerat reprehenderit vitae, est reiciendis quia, sed consequatur accusantium eius.
+            </p>
+            <p class="two">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ullam a blanditiis nulla id quos eveniet qui, est, adipisci odio reiciendis totam aliquid nemo tempora. Error cupiditate saepe veritatis dolor.
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illo magni nobis quidem, commodi tenetur illum repellendus tempore fugit in quaerat reprehenderit vitae, est reiciendis quia, sed consequatur accusantium eius.
+            </p>
+        </section>
+            
+            <h2>Semântica</h2>
+        <section>
+            <p>
+                Como representar botões com a tag &lt;kbd&gt;: <br><kbd>CTRL = f5</kbd>
+            </p><br>
+
+            <p>
+                Usando a tag &lt;abbr&gt; para mostrar significados de abreviações, juntamente com o atributo "title". Ex: <br> <abbr title="Hiper Text Markup Language">HTML5 </abbr>
+            </p><br>
+
+            <p>
+                Usando a tag &lt;time&gt;, juntamente com o atributo "datetime". Ex: <br>
+                <time datetime="1995-04-28T21:00:00-03:00">28/04/1995 - 21h00.</time>
+<!--            "date-time" -> foi usado padrão norte-americano.
+                "T" -> separa a data das horas.
+                "-3:00" -> representando o horário de brasília.             -->
+            </p><br>
+
+            <p>
+                Outro exemplo com &lt;time&gt; e "datetime": <br>
+                o hoário está marcado para <time datetime="18:00">18:00</time>
+            </p><br>
+
+            <p>
+                Usando as tags &lt;del&gt; e &lt;ins&gt;: <br>
+                O browser irá reconhecer que foi <del>retirada</del> a palavra e foi <ins>adicionada</ins> outra. 
+            </p><br>
+
+            <p>
+                Usando a tag &lt;span&gt; com o atributo "lang": <br>
+                Palavra em <span lang="en-us">english</span> - o browser vai entender que a palavra é em outra lingua a qual foi escrita o documento.
+            </p><br>
+
+            <p>
+                * Todas as tags são úteis semânticamente, pois facilita a leitura do browser e dos leitores de telas para acessibilidade.
+            </p>
+        </section>
+
+            <h2>Listas</h2>
+        <section>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2 </li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6 </li>
+                <li>Item 7</li>
+                <li>Item 8</li>
+                <li>Item 9</li>
+                <li>Item 10</li>
+            </ul>
+        </section>
+        
+            <h2>Listas de definição</h2>
+        <section>
+            <dl>    <!--"dl" -> Definition List-->
+                <dt>Item I</dt> <!-- "dt" -> Definition Term-->
+                <dd>definação do item I</dd><!-- "dd" -> Description Details-->
+            </dl>
+            <dl>
+                <dt>Item II</dt>
+                <dd>denifição I</dd>
+                <dd>denifição II</dd>
+            </dl>
+            <dl>
+                <dt>Item III</dt>
+                <dt>Item IV</dt>
+                <dt>Item V</dt>
+                <dd>mesma definição</dd>
+            </dl>
+        </section>
+
+            <h2>Tabelas</h2>
+        <section>
+            <table>
+                <caption>Título da Tabela</caption><!--Título da Tabela-->
+
+                <thead>
+                    <tr><!--Table Row-->
+                        <th colspan="3">'COLSPAN' usado para determinar quantas colunas o elemento deve ocupar</th><!--Table Header-->
+                    </tr>
+                 </thead>
+
+                 <tfoot><!--'table footer' deve ser colocado antes do 'tbody'-->
+                    <tr>
+                        <td colspan="3">'footer'</td>
+                    </tr>
+                 </tfoot>
+
+                 <tbody><!--Table Body-->
+                    <tr>
+                        <td>coluna 1, linha 2</td><!--Table Data-->
+                        <td>coluna 2, linha 2</td>
+                        <td rowspan="4">'ROWSPAN' usado para determinar quantas linha o elemento deve ocupar</td>
+                    </tr>
+                    <tr>
+                        <td>coluna 1, linha 3</td>
+                        <td>coluna 2, linha 3</td>
+                    </tr>
+                    <tr>
+                        <td>coluna 1, linha 4</td>
+                        <td>coluna 2, linha 4</td>
+                    </tr>
+                    <tr>
+                        <td>coluna 1, linha 5</td>
+                        <td>coluna 2, linha 5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+            <h2>Flexbox</h2>
+        <Section>
+            <Div class="flexbox">
+                <div class="flexbox-div">Div I</div>
+                <div class="flexbox-div">Div II</div>
+                <div class="flexbox-div">Div III</div>
+                <div class="flexbox-div">Div IV</div>
+            </Div>
+        </Section>
+
+            <h2>Formulários</h2>   
+        <section>
+            <form action="#" method="POST">
+                <!--
+                    action="" -> Local que receberá os dados.
+                    method="" -> Método de envio
+                -->
+                <fieldset><!-- Agrupar o formulário -->
+
+                    <legend>Exemplo de formulário</legend><!-- Título do fomulário -->
+                
+                    <label for="user">User</label><!--for="user" -> Ligação com o 'input'-->
+                    <input type="text" id="user" name="user">
+                    <!--
+                        type"..."      -> tipo de entrada
+                        id="..."   -> Ligação com o 'label'.
+                        name="..." -> Identificação para quando receber os dados (backend).
+                        'autofocus' -> Vá direto para o 'login' assim que a página é aberta .
+                    -->
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    
+                    <label>Email</label>
+                    <input type="email" name="" id="">
+                    
+                    <label for="">Números</label>
+                    <input type="number" min="0" max="7">
+
+                    <label for="">Data</label>
+                    <input type="date" min="" max="2021-07-05">
+
+                    <p class="sexo">Sexo:</p>
+                    <label class="masc">
+                        <input type="radio" name="sexo" value="m">Masculino
+                    </label>
+                    <label class="fem">
+                        <input type="radio" name="sexo" value="f">Feminino
+                    </label><!--'value' valor recebido pelo servidor-->
+
+                        <label>Estado
+                            <select name="Estado">
+                                <option value="0">Selecione</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="BA">Bahia</option>
+                            </select>
+                        </label>
+
+                    <fieldset>
+                    <legend>Checkbox</legend>
+                    <label><input type="checkbox" name="HTML5" value="HTML5">HTML5</label>
+                    <label><input type="checkbox" name="CSS3" value="CSS3">CSS3</label>
+                    <label><input type="checkbox" name="JS" value="JS">JavaScript</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Escreva</legend>
+                        <textarea name="..."cols="35" rows="10"></textarea>
+                        <!--
+                            "cols='...'" -> número de linhas.
+                            "rows='...'" -> número de colunas.
+                        -->
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Opção de Contrato</legend>
+                        <textarea name="#" cols="35" rows="10" readonly>Aqui vai um exemplo de opção de 'Termos e Condições' com a tag "textarea" e o atributo "readonly", onde o texto não pode ser editado mas a formatação padrão é igual a caixa de texto. Acompanha um "input type="checkbox".</textarea>
+                        <label><input type="checkbox" name="concordo">Li e aceito</label>
+                        
+                        <textarea name="#" cols="35" rows="10" disabled>Aqui um segundo exemplo de opção de 'Termos e Condições', com a tag "textarea" e o atributo "disabled". O texto não pode ser editado e a formatação padrão muda. Acompanha um "input type="checkbox".</textarea>
+                        <label><input type="checkbox" name="concordo">Li e aceito</label>
+                    </fieldset>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset">
+                    </fieldset>
+                    <!-- Outros 'input'
+                        "button" -> Podendo ser personalizado.
+                        "range"  -> Mostrar uma barra de seleção. 
+                        "time"   -> Hora.
+                      
+                        ATRIBUTOS
+                        "required" -> Exigir o preenchimento.
+                        "step"     -> Determinar intervalo sobre a seleção.
+                        "maxlength"-> Determinar o máximo de caracteres.
+                        "checked"  -> Mostra o 'checkbox' já checado.
+                        "multiple" -> Selecionar mais de uma opção.
+                        "placeholder" -> Dica de preenchimento.
+                    -->
+            </form>
+        </section>
+        
+        <div class="class-zero">
+            <div class="class-one">Proposta de layout com 'float' e 'clear'</div>
+            <div class="class-two">main</div>
+            <div class="class-three">nav</div>
+            <div class="class-four">footer</div>
+        </div>
+
+    </main>
+</body>
+</html>

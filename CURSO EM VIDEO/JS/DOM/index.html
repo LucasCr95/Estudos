@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DOM</h1>
+    </header>
+    
+    <main>
+        <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p><hr>
+        <p>Paragráfo apenas para completar o exercício</p>
+
+        <script>
+            var p1= window.document.getElementsByTagName('p')[0]
+            //  Com o [ ] eu seleciona o paragráfo que desejo
+            
+            window.document.write(p1.innerText + '<br>')
+            window.document.write(p1.innerHTML) 
+            // Aqui ele também adicionou a formatação
+        </script>
+
+        <ul>
+            <li id="li1">   Item I</li>
+            <li name='li2'> Item II</li>
+            <li class="li3">Item III</li>
+            <li class="li4">Item IV</li>
+            <li class="li5">Item V</li>
+            <li>Item VI</li>
+            <li>Item VII</li>
+            <li>Item VIII</li>
+        </ul>
+
+        <!-- USANDO OUTRAS FORMAS DE SELECIONAR OBJETOS -->
+        <script>
+            var li1= window.document.getElementById('li1')
+            li1.style.color= 'red'
+            // Selecionando pelo 'ID'
+
+            var li2= window.document.getElementsByName('li2')[0]
+            li2.style.color= 'blue'
+            // Selecionando por 'NOME'
+
+            var li3= window.document.getElementsByClassName('li3')[0]
+            li3.style.color='yellow'
+            // Selecionando por 'CLASSE'
+
+            var li4= window.document.querySelector('li.li4')
+            li4.style.color='green'
+            // Selecionando por 'SELETOR'
+            var li5= window.document.querySelectorAll('li.li5')[0]
+            li5.style.color= 'pink'
+            // Por seletor no plural --> All
+
+        </script>
+    </main>
+</body>
+</html> 

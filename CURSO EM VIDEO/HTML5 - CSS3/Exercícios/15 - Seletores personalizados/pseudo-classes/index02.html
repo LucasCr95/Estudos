@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto escondido</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*
+        #  = div
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children
+        */
+        div:hover{
+            color: red;
+        }
+        div > p{
+            /*
+            usado o sinal > para indicar que o paragráfo é 'filho' da div
+            */
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            background-color: rgb(73, 61, 248);
+            color: white;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!--PSEUDO-CLASSES SÂO PALAVRAS QUE DEFINEM ESTADOS DE ELEMENTOS-->
+    <h1>Elementos escondidos</h1>
+    <p>passe o mouse sobre o texto</p>
+    <div>
+        passe o mouse aqui
+        <p>TEXTO ESCONDIDO!!!</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

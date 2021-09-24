@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-family: 'Encode Sans Condensed';
+}
+body{
+    background-color: lightgray;
+    background-image: url(imagens/bg.jpg);
+    background-attachment: fixed;
+/*
+    Imagem de fundo fixa
+*/
+    background-size: cover;
+/*  
+    imagem ocupando a tela inteira
+*/
+    background-position: right bottom;
+/*
+    Imagem alinhada para a direita e para baixo,, declarações na horizontal e na vertical
+*/
+}
+h1{
+    background-color: rgba(11, 11, 71, 0.500);
+    color: white;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 15px;
+    font-size: 2.5em;
+    font-variant: small-caps;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+}
+h2{
+    background-color: rgba(128, 128, 128, 0.500);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+section{
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.500);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.300);
+}
+
+
+                /*PARAGRÁFOS*/
+p.one{
+    font-size: 1.3em;
+    font-variant: small-caps;
+/*
+    Texto com formato de letras maiúsculas, mas com a primeira letra maior
+*/
+    margin: 0 0 15px;
+}
+p.two{
+    text-transform: uppercase;
+/*
+    Texto todo maiúsculo ou minúsculo
+*/
+}
+
+
+                /*LISTAS*/
+ul{
+    list-style-position: inside;
+    columns: 2;
+}
+
+
+
+                /*LISTAS DE DEFINIÇÃO*/
+dl{
+    padding: 10px;
+    margin-top: 15px;
+}
+dd{
+    margin-left: 30px;
+}
+
+
+                /*TABELAS*/
+table{
+    border: 1px solid black;
+    margin: auto;
+    border-collapse: collapse;
+/*
+    Por padrão o valor da propriedade é 'separate'.
+*/
+}
+th{
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+
+                /*FORMULÁRIOS*/
+form{
+    margin: 15px auto;
+}
+fieldset{
+    padding: 10px;
+    margin: 15px auto;
+    width: 60%;
+}
+legend{
+    text-align: center;
+    font-size: 1.1em;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background-color: #d3d3d3;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+input:focus{
+    background-color: white;
+/*
+Indicar a mudança de background quando colocar pra digitar
+*/
+}
+.sexo{
+    margin-bottom: 5px;
+}
+input[type=radio]{
+    width: auto;
+    display: inline-block;
+}
+.masc, .fem{
+    display: inline-block;
+    margin-left: 35px;
+}
+input[type=checkbox]{
+    display: inline-block;
+    width: auto;
+    margin-left: 10px;
+}
+textarea{
+    font-size: 1.1em;
+    resize: none;   /* "resize" -> Retirar a opção de ajuste do campo */
+    padding: 5px;
+    letter-spacing: normal;
+}
+input[type=submit], [type=reset]{
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+}
+input[type=submit]:hover, [type=reset]:hover{
+    background-color: #999999;
+    color: white;
+    font-weight: bolder;
+}
+
+/*
+                SELETORES COMPOSTOS
+
+:nth-child(...) -> Usado para indicar o elemento desejado, elemento que vem antes dos 'dois pontos'.
+
+:not(...) -> Usado para evitar um seletor (ex: section:not(.destaque) -> seleciona todas as seções, menos a que tenha class="destaque").
+    
+'seletor' + 'seletor' -> Indicar o primeiro elemento (ex: "h3 + p" -> seleciona o primeiro 'p' depois de um 'h3').
+
+'seletor' ~ 'seletor' -> Indica todos os elementos logo após o elemento que for indicado antes do sinal '~'. (ex: "h3 ~ p" -> todos os 'p' seguinte do 'h3').  
+
+
+SELETORES DE ATRIBUTOS
+
+[href="#"] -> Todo elemento que tenha o atributo "href="#" .
+
+[href^="http://"] -> Todo elemento que tenha o atributo "href" que se inicia com "http://" .
+
+[href$=".pdf"] -> Todo elemento que tenha o atributo "href" que termina com ".pdf" .
+
+    
+*/
+
+                /*FLEXBOX*/
+
+.flexbox{
+    border: .10rem solid black;
+    padding: 1%;
+    display: flex;
+    flex-flow: row wrap;
+/*  ATALHO
+1º - 'flex-direction' -> Definir a direção dos elementos
+2º - 'flex-wrap' -> Indicar se haverá quebra de linha se o espaço não for suficiente.'
+*/
+    justify-content: space-around;/* -> Alinhar na vertical*/
+}							
+.flexbox-div{
+    text-align: center;
+    color: white;
+    width: 10em;
+    background-color: blue;
+    margin: .5em
+}
+/*      Propriedades no Container
+    'align-intems' -> Alinhar os elementos na horizontal.
+    'align-content' -> Agrupar o conteúdo em um determinado local no container.
+    
+    Propriedades no elemento filho
+    'flex-basis' -> Igual ao 'width'.
+    'flex-grow' -> O elemento definido vai ocupar o restante do espaço.
+    flex-shrink -> Diminui o elemento escolhido para que o grupo se encaixe em apenas uma linha.
+
+    ATALHO: 'flex:' -> grow, shrink, basis.
+*/
+
+
+
+
+                /*LAYOUT'S COM FLOAT E CLEAR*/
+.class-zero{
+    margin-top: 30px;
+}
+.class-one{
+    background-color: red;
+    height: 100px;
+    padding: 30px;
+    box-sizing: border-box;
+/*
+    'box-sizing: border-box' - evitar que o padding e border interfiram no tamanho final da box       
+*/
+}
+.class-two{
+    background-color: blue;
+    height: 400px;
+    width: 75%;
+    float: right;
+}
+.class-three{
+    background-color: yellow;
+    height: 300px;
+    width: 25%;
+}
+.class-four{
+    background-color: green;
+    height: 50px;
+    clear: both;
+}
+/* 
+    - 'float': posicionar elementos
+
+    - 'clear': fazer com que os  elementos posteriores não ocupem o espaço deixado pelo <float>
+
+    - 'overflow': tratar o conteúdo que exede ao elemento
+*/

@@ -1,0 +1,34 @@
+@charset "urf-8";
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+h1{
+    font-weight: normal;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    text-align: center;
+    background-color: lightgray;
+    margin: 0;
+    padding: .7em;
+}
+main{
+    padding: 1em;
+}
+table{
+    margin: 2em auto;
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+    padding: .8em 2em;
+}
+td:nth-child(1){
+    font-size: .7em;
+}
+span{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 1em ;
+}

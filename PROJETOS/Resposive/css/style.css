@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root{
+    --cor0: #27B9F2;
+    --cor1: #F2F2F2;
+    --cor2: #D4C7D9;
+    --cor3: #B499BF;
+    --cor4: #7D5A8C;
+    --cor5: #4F1B6D;  /*612674*/
+}
+*{  
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Oxygen';
+}
+body{
+    min-width: 320px;
+}
+h1{
+    color: var(--cor5);
+    font-size: 1.4em;
+    text-align: center;
+    padding: 1em .1em;
+}
+h2{
+    color: var(--cor5);
+    font-size: 1.2em;
+    letter-spacing: .1em;
+}
+h3{
+    color: var(--cor4);
+    font-size: 1.1em;
+    padding: 1em 0 0 0;
+    letter-spacing: .2em;
+}
+.button{
+    width: 100%;
+    text-align: center;
+}
+button{
+    background-color: var(--cor0);
+    color: var(--cor1);
+    font-size: 1em;
+    padding: .6em 2.2em;
+    margin: 1em 0;
+    border: .05rem solid transparent;
+    border-radius: .25rem;
+    transition: all .5s;
+}
+button:hover{
+    background-color: #1b89b4;
+}
+#header-img{
+    text-align: center;
+}
+#header-img img{
+    margin: 1em;
+}
+nav{
+    background-color: var(--cor5);
+    text-align: center;
+}
+nav > ul > li > a{
+    display: block;
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 1em;
+}
+nav > ul > li > a:hover{
+    background-color: var(--cor3);
+}
+.first{
+    padding: 2%;
+}
+.second{
+    padding: 2%;
+}
+main{
+    background-color: var(--cor1);
+}
+.main-content{
+    width: 100%;
+    text-align: center;
+    margin: 3em 0;
+}
+.main-content p{
+    margin: .5em 0 0 0;
+}
+aside{
+    background-color: white;
+    padding: 0 3%;
+}
+aside h3{
+    margin: 2em 0 0 0;
+}
+aside p{
+    margin: .5em 0 0 0;
+}
+footer{
+    text-align: center;
+    margin: 3em 0 0 0;
+}
+footer > ul{
+    background-color: #303D4C;
+}
+footer > ul > li{
+    display: inline-block;
+    padding: .5em;
+}
+.footer-content{
+    background-color: #25303E;
+    color: var(--cor1);
+    padding: 2%;
+}
+.footer-content p:nth-child(1){
+    font-size: 1.2em;
+    margin: 0 0 .5em 0;
+}
+
+@media screen and (min-width: 41.25em){
+    header{
+        width: 100%;
+        position: relative;
+    }
+    #header-img{
+        width: 40%;
+    }
+    #header-img img{
+        max-width: 100%;
+    }
+    nav{
+        background-color: white;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 1%;
+    }
+    nav > ul > li{
+        display: inline-block;
+    }
+    nav > ul > li > a{
+        border-radius: .20rem;
+        color: var(--cor5);
+        font-weight: bold;
+    }
+    main{
+        clear: both;
+    }
+    .first{
+        background-color: var(--cor5);
+        color: var(--cor1);
+        text-align: center;
+        padding: 2em 0 0 0;
+    }
+    .first h1::before{
+        content: url(../images/icon_play.png);
+        display: block;
+    }
+    .first > h1{
+        color: var(--cor1);
+    }
+    .column-1{
+        width: 50%;
+        float: left;
+        padding: 2%;
+        box-sizing: border-box;
+        background-color: var(--cor1);
+    }
+    .second div:last-child{
+        /* background-color: yellow;
+        padding: 20px; */
+        display: block;
+        clear: both;
+    }
+}
+@media screen and (min-width:50em){
+    .first{
+        background-image: url(/images/bg_topo_1198x670.jpg);
+        height: 26em;
+        background-size: cover;
+        background-position: top;
+    }
+    .first > h1{
+        margin: 5em 0 0 0;
+    }
+}
+@media  screen and (min-width: 68em){
+    .first{
+        height: 43em;
+        background-image: url(/images/bg_topo_1600x1374.jpg);
+    }
+    .first > h1{
+        margin: 18em 0 0 0;
+    }
+    .left{
+        float: left;
+        width: 45%;
+    }
+    .left:nth-child(2), .right:nth-child(2){
+        margin-left: 40px;
+    }
+    .right{
+        float: left;
+        width: 45%;
+    }
+    aside{
+        clear: both;
+    }
+}

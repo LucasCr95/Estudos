@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Operadores de Comparação</h1>
+    <main>
+        <table>
+        <tr>
+            <td><span>==</span>igualdade (valor)</td>
+            <td><span>===</span>igualdade (valor e tipo)</td>
+        </tr>
+        <tr>
+            <td><span>!=</span>diferente (valor)</td>
+            <td><span>!==</span>diferente (valor e tipo)</td>
+        </tr>
+        <tr>
+            <td><span>&lt;</span>maior</td>
+            <td><span>&lt;=</span>maior ou igual</td>
+        </tr>
+        <tr>
+            <td><span>&gt;</span>menor</td>
+            <td><span>&gt;=</span>menor ou igual</td>
+        </tr>
+        </table>
+
+
+        <script>
+            var n1 = prompt('Digite um número.');
+            n1 = parseFloat(n1);
+
+            var n2 = parseFloat(prompt('Digite outro número'));
+
+            var media = (n1 + n2) / 2;
+
+            alert(media > 5);
+        </script>
+    </main>
+</body>
+</html>

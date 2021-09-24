@@ -1,0 +1,59 @@
+  @charset "utf-8";
+    /*
+        padding -> acolchoamento/preenchimento
+        margin  -> margem
+        outline -> contorno
+    */
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #01003d17;
+      margin: 0;
+    }
+    nav{
+      background-color: #01003d;
+      padding: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    nav a{
+      color: #4b4b6e;
+      margin-left: 20px;
+      text-decoration: none;
+      padding: 5px;
+    }
+    a:hover{
+      color: rgba(204, 202, 202, 0.815);
+    }
+    main{
+      background-color: white;
+      margin: 10px;
+      padding: 05px;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.336);
+      /*colocar sombras na box-level*/
+      border-radius: 5px;
+      /*bordar arredondadas box-level*/
+    }
+    h1{
+      background-color: grey;
+      color: white;
+      padding: 10px;
+      margin: 0;
+    }
+    p{
+      text-align: justify;
+      padding: 5px;
+    }
+    aside{
+      background-color: rgb(209, 209, 209);
+      padding: 5px;
+    }
+    footer{
+      background-color: #01003d;
+      color: rgb(145, 145, 250);
+      padding: 10px;
+    }
+    footer > p{
+      text-align: center;
+      margin: 0;
+    }

@@ -1,0 +1,16 @@
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\bin\Debug\net5.0\Projeto001.exe
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\bin\Debug\net5.0\Projeto001.deps.json
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\bin\Debug\net5.0\Projeto001.runtimeconfig.json
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\bin\Debug\net5.0\Projeto001.runtimeconfig.dev.json
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\bin\Debug\net5.0\Projeto001.dll
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\bin\Debug\net5.0\ref\Projeto001.dll
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\bin\Debug\net5.0\Projeto001.pdb
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\obj\Debug\net5.0\Projeto001.csproj.AssemblyReference.cache
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\obj\Debug\net5.0\Projeto001.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\obj\Debug\net5.0\Projeto001.AssemblyInfoInputs.cache
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\obj\Debug\net5.0\Projeto001.AssemblyInfo.cs
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\obj\Debug\net5.0\Projeto001.csproj.CoreCompileInputs.cache
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\obj\Debug\net5.0\Projeto001.dll
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\obj\Debug\net5.0\ref\Projeto001.dll
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\obj\Debug\net5.0\Projeto001.pdb
+C:\Users\luka_\OneDrive\Documentos\LUCAS\ESTUDOS\BootCampAvanade\.Net\Projeto001\obj\Debug\net5.0\Projeto001.genruntimeconfig.cache

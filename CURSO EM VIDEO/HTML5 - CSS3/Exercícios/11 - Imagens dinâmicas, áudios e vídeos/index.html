@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 011</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Trabalhando com tamnhos diferentes de imagens com o obejtivo de atender a mais de um tamanho de tela </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Aprendendo a introduzir áudios nos documentos HMTL5</p>
+    <audio src="midia/oriente-fé.mp3" controls autoplay>Oriente - Fé</audio>
+    
+    <p>Segunda maneira de adicionar</p>
+    <audio preload="megadata" autoplay controls loop>
+        <source src="midia/oriente-fé.mp3" type="audio/mpeg">
+    </audio>
+    
+    <h1>Trabalhando com vídeos</h1>
+    <p>Inserindo vídeos hospedados localmente, hospedado no próprio servidor</p>
+    <video width="650px" controls poster="" autoplay loop>
+        <source src="video/Video-1.webm" type="video/webm">
+        <source src="video/Video-1.m4v" type="video/mp4">
+        <source src="video/video.mp4" type="video/mp4">
+    </video>
+    
+    <p>Inserindo vídeos pelo YouTube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

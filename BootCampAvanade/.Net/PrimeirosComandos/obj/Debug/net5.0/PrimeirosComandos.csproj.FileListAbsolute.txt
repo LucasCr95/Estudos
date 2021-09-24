@@ -1,0 +1,16 @@
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\bin\Debug\net5.0\PrimeirosComandos.exe
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\bin\Debug\net5.0\PrimeirosComandos.deps.json
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\bin\Debug\net5.0\PrimeirosComandos.runtimeconfig.json
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\bin\Debug\net5.0\PrimeirosComandos.runtimeconfig.dev.json
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\bin\Debug\net5.0\PrimeirosComandos.dll
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\bin\Debug\net5.0\ref\PrimeirosComandos.dll
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\bin\Debug\net5.0\PrimeirosComandos.pdb
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\obj\Debug\net5.0\PrimeirosComandos.csproj.AssemblyReference.cache
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\obj\Debug\net5.0\PrimeirosComandos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\obj\Debug\net5.0\PrimeirosComandos.AssemblyInfoInputs.cache
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\obj\Debug\net5.0\PrimeirosComandos.AssemblyInfo.cs
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\obj\Debug\net5.0\PrimeirosComandos.csproj.CoreCompileInputs.cache
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\obj\Debug\net5.0\PrimeirosComandos.dll
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\obj\Debug\net5.0\ref\PrimeirosComandos.dll
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\obj\Debug\net5.0\PrimeirosComandos.pdb
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\PrimeirosComandos\obj\Debug\net5.0\PrimeirosComandos.genruntimeconfig.cache

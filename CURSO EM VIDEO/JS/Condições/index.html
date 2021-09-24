@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Condições</h1>
+    </header>
+    <main>
+        Velocidade do carro:
+        <input type="number" name="vel" id="vel">
+        <input type="submit" value="enviar" onclick="enviar()">
+        <div id="res"> </div>
+        
+        <script>
+            function enviar(){
+            var vel = window.document.getElementById('vel')
+            var vel = Number(vel.value)
+            res= window.document.getElementById('res')
+            res.innerHTML = `<p>Sua velocidade é de <strong>${vel} km/hr</strong></p>`
+            
+            if(vel > 60){
+            res.innerHTML +=`<p>Você foi <strong>multado</strong> por execesso de velocidade!</p>`
+            }
+            res.innerHTML += `<p>Diriga sempre com cuidado =).</p>`
+            
+        }
+        
+        </script>
+    </main>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DOM</h1>
+    </header>
+    <main>
+<!--  
+            LIGAÇÃO DIRETO NA DIV
+-->
+        <div id="div1" onclick="clicar()" onmouseenter="sobre()" onmouseout="fora()">
+            Interagindo
+        </div>
+
+        
+        <script>
+            var div1= window.document.querySelector('div#div1')
+
+            function clicar(){
+                div1.innerText = 'Clicando com o mouse'
+                div1.style.background= 'red'
+                div1.style.color = 'white'
+            }
+            function sobre(){
+                div1.innerText = 'Entrou!'
+                div1.style.background='yellow'
+                div1.style.color = 'black'
+            }
+            function fora(){
+                div1.innerText = 'Saiu!'
+                div1.style.background = 'blue'
+                div1.style.color = 'white'
+            }
+        </script>
+<!-- 
+            LIGAÇÃO NO SCRIPT
+ -->
+        <div id="div2">
+            Interagindo
+        </div>
+
+        <script>
+            var div2= window.document.querySelector('div#div2')
+
+            div2.addEventListener('click', clicando)
+            div2.addEventListener('mouseenter', entrar)
+            div2.addEventListener('mouseout', saiu)
+
+            function clicando(){
+                div2.innerText = 'Clicando com o mouse'
+                div2.style.background = 'red'
+                div2.style.color = 'white'
+            }
+            function entrar(){
+                div2.innerText = 'Entrou!'
+                div2.style.background = 'yellow'
+                div2.style.color = 'black'
+            }
+            function saiu(){
+                div2.innerText = 'Saiu!'
+                div2.style.background = 'blue'
+                div2.style.color = 'white'
+            }
+        </script>
+
+        <div id="calc">
+            <input type="number" name="txtn1" id="txtn1"> + 
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="calcular" onclick="somar()">
+            <div id="res">Resultado</div>
+        </div>
+        <script>
+            function somar(){
+                var tn1 = window.document.getElementById('txtn1')
+                var tn2 = window.document.getElementById('txtn2')
+                var n1 = Number(tn1.value)
+                var n2 = Number(tn2.value)
+                var s = n1 + n2
+                var res = window.document.getElementById('res')
+                res.innerHTML = `A soma de ${n1} e ${n2} é igual a <strong>${s}</strong>`
+            }
+        </script>
+
+    </main>     
+</body>
+</html> 

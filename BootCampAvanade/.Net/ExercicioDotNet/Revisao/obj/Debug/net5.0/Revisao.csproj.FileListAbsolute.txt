@@ -1,0 +1,16 @@
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\bin\Debug\net5.0\Revisao.exe
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\bin\Debug\net5.0\Revisao.deps.json
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\bin\Debug\net5.0\Revisao.runtimeconfig.json
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\bin\Debug\net5.0\Revisao.runtimeconfig.dev.json
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\bin\Debug\net5.0\Revisao.dll
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\bin\Debug\net5.0\ref\Revisao.dll
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\bin\Debug\net5.0\Revisao.pdb
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\obj\Debug\net5.0\Revisao.csproj.AssemblyReference.cache
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\obj\Debug\net5.0\Revisao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\obj\Debug\net5.0\Revisao.AssemblyInfoInputs.cache
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\obj\Debug\net5.0\Revisao.AssemblyInfo.cs
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\obj\Debug\net5.0\Revisao.csproj.CoreCompileInputs.cache
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\obj\Debug\net5.0\Revisao.dll
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\obj\Debug\net5.0\ref\Revisao.dll
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\obj\Debug\net5.0\Revisao.pdb
+C:\Users\luka_\OneDrive\Documentos\ESTUDOS\BootCampAvanade\.Net\ExercicioDotNet\Revisao\obj\Debug\net5.0\Revisao.genruntimeconfig.cache

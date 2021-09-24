@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+}
+header{
+    height: 55px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.200);
+    z-index: 1;
+}
+header p{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+header p:hover{
+    background-color: #ccc;
+}
+header nav{
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+header a:hover{
+    background-color: #ccc;
+}
+#top{
+    position: relative;
+}
+#top img{
+    width: 100%;
+}
+#top h1{
+    display: inline-block;
+    font-weight: normal;
+    color: #58595D;
+    font-size: 2.3em;
+    letter-spacing: 5px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+main{
+    max-width: 80%;
+    margin: auto;
+}
+.about{
+    border-bottom: 1px solid lightgray;
+    overflow: auto;
+    padding-bottom: 80px;
+    margin-top: 80px;
+}
+.about-esquerda{
+    display: inline-block;
+    width: 47%;
+    float: left;
+    margin-right: 3%;
+}
+.about-esquerda img{
+    width: 100%;
+    border-radius: 5px;
+    opacity: 70%;
+}
+.about-direita{
+    display: inline-block;
+    width: 47%;
+    float: right;
+    margin-left: 3%;
+}
+.about-direita h1{
+    font-weight: normal;
+    font-size: 2.3em;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.800);
+    padding: 20px ;
+}
+.about-direita h2{
+    font-weight: normal;
+    font-size: 1.3em;
+    text-align: center;
+    color:black;
+    padding: 15px;
+}
+.about-direita p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+}
+.about-direita .p2{
+    color: gray;
+}
+.menu{
+    border-bottom: 1px solid lightgray;
+    overflow: auto;
+    padding-bottom: 80px;
+    margin-top: 80px;
+}
+.menu-esquerda{
+    display: inline-block;
+    width: 47%;
+    float: left;
+    margin-right: 3%;
+}
+.menu-esquerda h1{
+    font-weight: normal;
+    font-size: 2.3em;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.800);
+    padding: 20px ;
+}
+.menu-esquerda h2{
+    font-weight: normal;
+    font-size: 1.3em;
+    color:black;
+    padding: 15px 0;
+}
+.menu-esquerda p{
+    letter-spacing: 0;
+    color: gray;
+}
+.menu-direita{
+    display: inline-block;
+    width: 47%;
+    float: right;
+    margin-left: 3%;
+}
+.menu-direita img{
+    width: 100%;
+    border-radius: 5px;
+    opacity: 70%;
+}
+.contact{
+    margin: 100px 0 50px; 
+}
+.contact h1{
+    font-weight: normal;
+    font-size: 2.3em;
+    margin-bottom: 50px;
+}
+.contact p{
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+.adress{
+    font-weight: bold;
+    color: #607D8B;
+}
+input[type=text], [type=date]{
+    width: 100%;
+    padding: 15px 5px;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+    color: gray;
+    border: transparent;
+    border-bottom: 1px solid lightgray;
+}
+
+input[type=button]{
+    padding: 10px;
+    letter-spacing: 0;
+    border: transparent;
+}
+input[type=button]:hover{
+    background-color: lightgray;
+}
+footer{
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 30px;
+}

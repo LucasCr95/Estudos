@@ -1,0 +1,88 @@
+@charset "utf-8";
+body{
+    margin: 0;
+}
+ h1{
+     background-color: lightgray;
+     padding: .5em;
+     margin: 0 0;
+     text-align: center;
+     font-family: sans-serif;
+     font-weight: normal;
+     text-decoration: underline;
+     letter-spacing: .1em;
+     text-transform: uppercase;
+ }
+ h2{
+     font-family: sans-serif;
+     font-weight: normal;
+     font-size: 1.7em;
+     background-color: lightblue;
+     padding: .3em;
+ }
+
+/*      Criando a animação      ==========*/
+ @keyframes anima1 {
+     0%{
+         transform: translateX(0);
+     }
+     50%{
+         background-color: blue;
+     }
+     100%{
+         transform: translateX(20em);
+     }
+ }
+/*  "anima1" -> Nome da animação.
+*/
+.anima1{
+    border: .10rem solid red;
+    height: 4em;
+    width: 5em;
+    margin: 2em;
+    animation-name: anima1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in; /* -> estilo da animação */
+}
+.anima2{
+    border: .10rem solid red;
+    height: 4em;
+    width: 5em;
+    margin: 2em;
+    animation-name: anima1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+
+    animation-delay: 2s;/* -> Definir o tempo de ínicio ===*/
+}
+
+.anima3{
+    border: .10rem solid red;
+    height: 4em;
+    width: 5em;
+    margin: 2em;
+    animation-name: anima1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+
+    animation-iteration-count: infinite;/* -> Definir quantas vezes a animação vai acontecer.
+*/
+    animation-direction: alternate;/* -> Colocar animação na "volta" do elemento para o ínicio.
+*/
+    
+}
+
+/*  SHORTHAND   ==============
+    animation: anima1 1.5s ease-in 2s infinite alternate;
+
+    animation-name: anima1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    
+    "animation-fill-mode: ... ;" -> Definir como o elemento vai se comportar antes/depois da animação
+
+    "animation-play-state: ... ;" -> Podendo usar para pausar quano passar o mouse sobre.
+*/

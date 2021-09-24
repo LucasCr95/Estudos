@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Personalizados</title>
+    <style>
+        /*
+        #  = div
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: #666666;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color: #000000;
+            background-color: lightgray;
+            padding: 5px;
+        }
+        a:visited{
+            /*indicar que o link foi visitado*/
+        }
+        a:active{
+            /*momento em que o link é cliquado*/
+        }
+        a::after{
+            /*adicionar caracteres depois dos links*/
+        }
+        a::before{
+            /*adicionar caracteres antes dos links*/
+            content: '➟';
+        }
+
+
+    </style>
+</head>
+<body>
+    <p><a href="https://twitter.com/_LucasCr_" target="_blank">Twitter</a></p>
+    <p><a href="https://www.facebook.com/lukaSk8board" target="_blank">Facebook</a></p>
+    <p><a href="https://www.instagram.com/_lucas.crr/" target="_blank">Instagram</a></p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "urf-8";
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+h1{
+    font-weight: normal;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    text-align: center;
+    background-color: lightgray;
+    margin: 0;
+    padding: .7em;
+}
+main{
+    padding: 1em;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+tr td{
+    border: .10rem solid black;
+    padding: .3em 1em;
+}
+tr:nth-child(even) td{
+    background-color: #f3f3f3;
+}
+tr:nth-child(odd) td{
+    background-color: #cecece;
+}

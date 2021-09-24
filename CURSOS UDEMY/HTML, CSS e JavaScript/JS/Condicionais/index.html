@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Condicionais</h1>
+</body>
+       
+        <script>
+            var n1 = parseFloat(prompt('Digite um número.'));
+            
+            var n2 = parseFloat(prompt('Digite outro número'));
+            
+            var media = (n1 + n2) / 2;
+            
+            if(media > 5){   //Se for maior que 5 -> true
+                alert('A média dos número foi maior que 5')
+            } else{  // Se for menor que 5 -> false
+                alert('A média dos número foi menor que 5')
+            }
+        </script>
+
+        <script>
+            var n = parseInt(prompt('Digite um número'));
+    
+            switch(n){ // Determinar mais de uma condição
+                case 1:
+                    alert('Mensagem para o número 1');
+                    break; // Interrompendo =======
+        
+                case 2: 
+                    alert('Mensagem para o número 2');
+                    break;
+                
+                case 3:
+                    alert('Mensagem para o número 3');
+                    break;
+                
+                default:
+                    alert('Mensagem para para outro número que não seja de 1 a 3');
+            }       
+        </script>
+        
+</html>

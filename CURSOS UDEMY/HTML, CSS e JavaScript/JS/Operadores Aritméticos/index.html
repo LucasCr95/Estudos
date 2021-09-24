@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Operadores Aritméticos</h1>
+    <main>
+        <p>Iniciando com JavaScript</p>
+
+        <script>
+            // Pedindo pra digitar um número.
+            var n1 = prompt('Digite um número.');
+            n1 = parseInt(n1);
+
+            //Outro número.
+            var n2 = prompt('Digite outro número.')
+            n2 = parseInt(n2);
+
+            var elevado = n1 ** n2;
+            var modulo = n1 % n2;
+            var soma = n1 + n2;
+            var sub = n1 - n2;
+            var multi = n1 * n2;
+            var div = n1 / n2;
+            var media = (n1 + n2) / 2;
+            var porcen = n1 * n2 / 100;
+
+            // Mostrando as operações.
+            alert('Dividindo ' + n1 + ' por ' + n2 + ' sobra: ' + modulo)
+            alert(n1 + ' elevado a ' + n2 + ' é igual a: ' + elevado)
+            alert('A porcentagem é = ' + porcen);
+            alert('A média é = ' + media);
+            alert('A divisão é = ' + div);
+            alert('A multiplicação é = ' + multi);
+            alert('A subtração é = ' + sub);
+            alert('A soma é = ' + soma);
+            
+            </script>
+    </main>
+</body>
+</html>

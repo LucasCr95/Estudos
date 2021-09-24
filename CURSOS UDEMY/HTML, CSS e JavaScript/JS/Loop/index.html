@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <p>Criando um loop no código com 'while'</p>
+    <table>
+        <tr>
+            <td>while</td>
+        </tr>
+    </table>
+</body>
+
+    <script>
+        var number = parseFloat(prompt('Digite um número'));
+
+        var indice = 1;
+
+        while(indice <=250){
+            document.write(number + ' x ' + indice + ' = ' + (number * indice) + '<br>');
+            
+            if(indice % 10 === 0 && indice > 0){
+                document.write('<hr>');
+            }
+            indice = indice + 1;
+        }
+        document.write('Fim!')
+    </script>
+</html>
