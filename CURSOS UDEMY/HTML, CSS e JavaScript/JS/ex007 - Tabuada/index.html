@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Praticando Estrutura de repetição</h1>
+    <main>
+       
+    </main>
+    <!-- 
+        Trabalhando com Estrutura de Repetição
+     -->
+    <script>
+        alert("Tecle ENTER para começar...");
+
+        let valor1 = parseFloat(prompt("Digite o número que deseja calcular..."));
+        let valor2 = parseFloat(prompt("Até quanto deseja multiplicar..."));
+        let valorMultiplica = 1;
+        
+        while(valorMultiplica <= valor2){
+            let valorFinal = valor1 * valorMultiplica;
+            document.write(valor1 + " x " + valorMultiplica + " = " + valorFinal + "<br>");
+            valorMultiplica++
+        }
+        document.write("Fim da tabuada!");
+
+    </script>
+</body>
+</html>

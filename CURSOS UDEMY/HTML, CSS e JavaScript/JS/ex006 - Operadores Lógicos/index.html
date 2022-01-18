@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Operadores Lógicos</h1>
+    
+    <main>
+        <table>
+            <tr>
+                <td>1°</td>
+                <td><span>!</span></td>
+                <td>Não (not)</td>
+                <td rowspan="3">O operador tem uma sequência pra ser interpretada.</td>
+            </tr>
+
+            <tr>
+                <td>2°</td>
+                <td><span>&&</span></td>
+                <td>E (end)</td>
+            </tr>
+            
+            <tr>
+                <td>3°</td>
+                <td><span>||</span></td>
+                <td>Ou (or)</td>
+            </tr>
+        </table>
+    </main>
+    <!-- 
+        Operadores Lógicos e Estrutura Condicional
+    -->
+    <script>
+
+        alert("Tecle ENTER para iniciar...");
+
+        let nota1 = parseFloat(prompt("Digite a primeira nota..."));
+        let nota2 = parseFloat(prompt("Digite a segunda nota..."));
+        let nota3 = parseFloat(prompt("Digite a terceira nota..."));
+        let nota4 = parseFloat(prompt("Digite a quarta nota..."));
+        let nTotal = nota1 + nota2 + nota3 + nota4;
+        let media =  nTotal / 4 ;
+
+        if(nota1 == 0 || nota2 == 0 || nota3 == 0 || nota4 == 0){
+            alert("Nenhuma das notas pode ser igual a 0. \n [ REPROVADO ]")
+        }else{
+            if(media >= 6 ){
+                alert("Primeira nota: " + nota1 + "\n Segunda nota: " + nota2 + "\n Terceira nota: " + nota3 + "\n Quarta nota: " + nota4 + "\n Total: " + nTotal + "\n Nota média: " + media + "\n [ APROVADO ]");
+            }else{
+                alert("Primeira nota: " + nota1 + "\n Segunda nota: " + nota2 + "\n Terceira nota: " + nota3 + "\n Quarta nota: " + nota4 + "\n Total: " + nTotal + "\n Nota média: " + media + "\n [ REPROVADO ]");
+            }
+        }   
+    </script>
+</body>
+</html>
