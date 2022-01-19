@@ -9,21 +9,20 @@
 </head>
 <body>
     <h1>Anos bissexto</h1>
-    <p>Exercício com JS</p>
 </body>
 
     <script>
-        var ano = 1004;
+        let anoFinal = parseFloat(prompt("Até qual ano deseja ver?"));
+        let anoInicio = 1004;
 
-        while(ano <= 2017){
-
-            if( !(ano % 100 === 0) || (ano % 400 === 0)){
-                document.write(ano + '<br>');
-            } else{
-                document.write( ano + ' -> Não é Bissexto.<br>')
-            }
-            // ano = ano + 4;
-            ano += 4;
+        while(anoInicio <= anoFinal){
+           if(!(anoInicio % 4 === 0)){
+               document.write(anoInicio + " <br>");
+           } else{
+               document.write(anoInicio + " -> Ano bissexto <br>");
+           }
+           anoInicio++
         }
+        
     </script>
 </html>

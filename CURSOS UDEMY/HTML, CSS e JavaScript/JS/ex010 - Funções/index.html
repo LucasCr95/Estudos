@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Funções</h1>
+    <!-- 
+        Começando com funções
+
+        Pedido para apresentar um número dentro de um formulário para mostrar seu valor multiplicado até 100x
+     -->
+    <main>
+        <fieldset>
+            <form action="#">
+                <input type="number" id="number">
+                <input type="submit" onclick="mostrarTabuada()" value="Mostrar tabuada">
+                <input type="reset" onclick="limparTabuada()" value="Limpar">
+            </form>
+        </fieldset>
+        <div id="output"></div>
+    </main>
+    
+    <script>
+        function mostrarTabuada(){
+            let n = parseFloat(document.querySelector("#number").value);
+            
+            limparTabuada();
+
+            for(let i = 1; i <= 100; i++){
+                mensagem += n + " x " + i + " = " + (n*i) + "<br>";
+            }
+            output.innerHTML = mensagem;
+        }
+
+        function limparTabuada(){
+            mensagem = "";
+            output.innerHTML = mensagem;
+        }
+
+       let output = document.querySelector("#output");
+       let mensagem = "";
+
+    </script>
+</body>
+</html>

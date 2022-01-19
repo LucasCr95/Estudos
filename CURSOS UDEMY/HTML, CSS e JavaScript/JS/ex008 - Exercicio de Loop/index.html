@@ -18,18 +18,16 @@
 </body>
 
     <script>
-        var number = parseFloat(prompt('Digite um número'));
+        let n1 = parseFloat(prompt("Digite um número..."));
+        let n2 = parseFloat(prompt("Até quanto deseja multiplicar?"));
+        
+        for(let nMultiplica = 1; nMultiplica <= n2; nMultiplica++){
+            let nTotal = n1 * nMultiplica;
+            document.write(n1 + " x " + nMultiplica + " = " + nTotal + "<br>");
 
-        var indice = 1;
-
-        while(indice <=250){
-            document.write(number + ' x ' + indice + ' = ' + (number * indice) + '<br>');
-            
-            if(indice % 10 === 0 && indice > 0){
-                document.write('<hr>');
+            if(nMultiplica % 10 == 0){
+                document.write("<hr>")
             }
-            indice = indice + 1;
         }
-        document.write('Fim!')
     </script>
 </html>
