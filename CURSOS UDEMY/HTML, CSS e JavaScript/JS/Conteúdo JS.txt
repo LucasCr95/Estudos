@@ -1,0 +1,20 @@
+			Lógica de Programação
+
+* Tudo que for texto tem que estar dentro de " " ou ' ' .
+* Concatenação (+) - Juntar expressões.
+* Variáveis não podem conter caracteres especiais, somente $ e _ . Pode ter números, mas não no início.
+* Variáveis podem conter: string; números inteiros; números reais; números boleano; array; objetos...
+* Tipos de Dados - null; undefined; NaN.
+
+ Comandos:
+
+- alert ("...")  	-> Exibir alguma mensagem.
+
+- prompt ("...") 	-> Exibir uma caixa para preencher.
+
+- var "..."		-> Criar uma variável. 
+
+- parseFloat (...)      -> Converter texto em números.
+
+
+

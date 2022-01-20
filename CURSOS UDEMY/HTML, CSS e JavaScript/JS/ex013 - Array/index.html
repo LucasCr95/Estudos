@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Array</h1>
+    <main>
+      <label for="opcoes">
+          <input type="text" id="opcoes">
+          <input type="submit" value="Enviar" onclick="armazenar()">
+          <input type="button" value="listar" onclick="listar()">
+      </label>
+      <div id="campo"></div>
+    </main>
+    <script>
+        
+        let produtos = new Array('banana', 'maca', 'morango', 'pera')
+        produtos.push('manga', 'melancia');
+        let msg = document.getElementById("campo").innerHTML;
+
+        function listar(){
+            clean();
+            for(let i = 0; i < produtos.length; i++){
+                msg = "produto: " + produtos[i] + "<br>";
+                document.getElementById("campo").innerHTML += msg;
+
+            }
+
+            function clean(){
+                document.getElementById("campo").innerHTML = "";
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

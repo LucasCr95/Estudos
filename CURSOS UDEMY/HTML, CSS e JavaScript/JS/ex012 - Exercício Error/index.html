@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>try{} catch (error) {}</h1>
+    <main>
+       <form action="#">
+           <label for="num1">Informe a largura: </label>
+           <input type="text" id="num1">
+           <br>
+           <label for="num2">Informe a altura: </label>
+           <input type="text" id="num2"><br>
+           <input type="submit" value="mostrar" onclick="mostrar()">
+           <input type="reset" value="Limpar" onclick="clean()">
+           <br>
+           <div id="resultado"></div>
+       </form>
+    </main>
+    <script>
+        function mostrar(){
+
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+
+            try {
+                iniciarPrograma(num1, num2);                
+            } catch (error) {
+                return;
+            }
+        }
+        
+        function iniciarPrograma(num1, num2){
+            
+            if(isNaN(num1) || isNaN(num2)){
+                alert("Caracteres inválidos!")
+            }else{
+                let areaTotal = calcularArea(num1, num2);
+                let mensagem = document.getElementById("resultado").innerHTML = num1 + " x " + num2 + " = " + areaTotal;
+            }
+        }
+
+        function clean(){
+            document.getElementById("resultado").innerHTML = "";
+        }
+
+        function calcularArea(l, a){
+            return l * a;
+        }
+
+    </script>
+</body>
+</html>
