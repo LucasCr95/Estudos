@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Trabalhando com Array e Função</h1>
+    <main>
+        <input type="button" value="Mostrar" onclick="mostrar()">
+        <input type="button" value="Somar números" onclick="calcular()">
+        <input type="button" value="Limpar" onclick="clean()">
+      <div id="campo"></div>
+      <div id="mostrarSoma"></div>
+    </main>
+    <script>
+        let numeros = new Array('10','15','20','25','30','35');
+        numeros.push('40','45')
+
+        function mostrar(){
+            clean();
+
+            for(let i = 0; i < numeros.length; i++){
+                document.getElementById("campo").innerHTML += "Número: " + numeros[i] + "<br>";     
+            }
+        }
+
+        function clean(){
+            document.getElementById("campo").innerHTML = "";
+            document.getElementById("mostrarSoma").innerHTML = "";
+        }
+
+        function calcular(){
+            let soma  = 0;
+            let somaImpar = 0;
+            for(let i = 0; i < numeros.length; i++){
+                if(numeros[i] % 2 === 0){
+                    soma += parseFloat(numeros[i]);
+                } else{
+                    somaImpar += parseFloat(numeros[i]);
+                }
+            }
+            escrever(soma, somaImpar);
+        }
+
+        function escrever(num1, num2){
+            document.getElementById("mostrarSoma").innerHTML = "<hr> Soma números pares = " + num1;
+            document.getElementById("mostrarSoma").innerHTML += "<hr> Soma números ímpares = " + num2;
+        }
+    </script>
+</body>
+</html>

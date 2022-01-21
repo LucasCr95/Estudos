@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Array com maior quantidade de dados</h1>
+    <main>
+      <div id="output"></div>
+    </main>
+    <script>
+
+//      Criando um array        
+        let marcas = ['Oakley', 'Nike', 'Adidas', 'DC', 'Element', 'Hocks', 'Starter']
+
+//      Criando um objeto
+        let oakley = {"Modelo":"Modoc", "Cor":"Preto", "Quantidade":37}
+
+//     Array de objetos
+        let marca = [{"Marca": "Oakley", "Produto": "Calçado", "Quantidade": 36},{"Marca": "Nike", "Produto": "Camiseta", "Quantidade": 15},{"Marca": "Adidas", "Produto":"Boné", "Quantidade":5}];
+
+        let msg = "";
+        
+        for(i = 0; i < marca.length; i++){
+            msg += "Marca: " + marca[i].Marca;
+            msg += " - Produto: " + marca[i].Produto;
+            msg += " - Quantidade: " + marca[i].Quantidade + "<hr>";
+        }
+        document.getElementById("output").innerHTML = msg;
+        
+    </script>
+</body>
+</html>

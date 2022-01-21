@@ -8,13 +8,16 @@
 
  Comandos:
 
-- alert ("...")  	-> Exibir alguma mensagem.
-
-- prompt ("...") 	-> Exibir uma caixa para preencher.
-
-- var "..."		-> Criar uma variável. 
-
-- parseFloat (...)      -> Converter texto em números.
-
-
-
+- alert ("...")  		-> Exibir alguma mensagem.
+- prompt ("...") 		-> Exibir uma caixa para preencher.
+- var "..."			-> Criar uma variável. 
+- parseFloat (...)      	-> Converter texto em números.
+- parseInt 			-> Converter para números inteiros
+- throw new Error		-> Retornando erro no console
+- isNaN 			-> Não é número
+- variavel = new Array()	-> Criando um array
+- variavel.push('','')		-> Colocar mais conteúdo dentro do Array
+- new Date();			-> Função que mostra ao usuário a data atual
+- variavel.getDay(); 		-> Retorna o dia da semana
+let variavel = new Object()	-> Cria um objeto
+variavel.... = "";		-> Atribui uma propriedade a um objeto

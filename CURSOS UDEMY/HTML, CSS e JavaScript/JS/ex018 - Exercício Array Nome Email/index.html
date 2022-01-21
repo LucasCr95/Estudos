@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Exercício Array de Objetoss</h1>
+    
+        <input type="button" value="Mostrar Banco de Dados" onclick="mostrar()"> 
+        <input type="button" value="Limpar" onclick="clean()">
+        <div div id="local"></div>
+    </main>
+
+    <script>
+        let dados = [{"Nome":"Jose Lucas","Tel":"11945486598","Email":"lucas.crr95@gmail.com"},
+                    {"Nome":"Alfredo Silva","Tel":"11948576523","Email":"alfredo.silva@gmail.com"},
+                    {"Nome":"Ramom Fernando","Tel":"11985693214","Email":"ramom_bruno@hotmail.com"},
+                    {"Nome":"Maria Alice","Tel":"11985471236","Email":"m.alice.duda@gmail.com"}]
+
+                    
+        function mostrar(){
+            clean();
+            
+            let msg = "";
+
+            for(i = 0; i < dados.length; i++){
+                msg += "Nome: " + dados[i].Nome + "<br>"; 
+                msg += "Tel: " + dados[i].Tel + "<br>";
+                msg += "Email: " + dados[i].Email + "<hr>";
+            }
+
+            mensagem(msg);
+        }
+
+        function mensagem(v){
+            document.getElementById("local").innerHTML = v;
+        }
+
+        function clean(){
+            document.getElementById("local").innerHTML = "";
+        }
+
+    </script>
+</body>
+</html>
