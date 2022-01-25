@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Anotações sobre JS</h1>
+    <main>
+      
+    </main>
+    <script>
+
+//      Função Literal
+        function somar(num1, num2){
+            return num1 + num2;
+        }
+
+        var soma = somar(10, 20)
+        console.log("Resultado: " + soma + " [ TESTE ]");
+
+//      Atribui uma propriedade à função
+        somar.teste = "Propriedade da função. [ TESTE ]";  
+
+        console.log(somar.teste);
+        
+        
+//      Atribui uma função à variável
+        var testeFuncao = function(str){
+            console.log("Testando função anônima..." + str + "[ TESTE ]");
+        };
+        testeFuncao("[ Passa parâmetro ]");
+
+//      Passando função por parâmetro
+        var funcaoParametro = function(f){
+            f();
+        }; 
+
+        funcaoParametro(function(){
+            console.log("Função por parâmetro... [ TESTE ]");
+        });
+
+//      Funções auto-executáveis -> IFEE
+/*      (function(){
+
+        })() 
+*/
+
+//      Não permite criar variáveis sem 'var', ou 'let'
+        (function(){
+            var isValid = false;
+            console.log(isValid);
+
+            function somar(){
+                var n1 = 10, n2 = 20;
+                console.log(n1 + n2)
+            }
+            somar();
+        })()
+
+    </script>
+</body>
+</html>
