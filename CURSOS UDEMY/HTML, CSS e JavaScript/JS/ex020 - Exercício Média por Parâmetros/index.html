@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Média passada por parâmetros</h1>
+    <main>
+       
+    </main>
+
+    <script>
+        (function(){
+            function somar(){
+                console.log(arguments);
+                var result = 0;
+                var x = 0;
+
+                while(arguments[x]){
+                    result += arguments[x];
+                    x++;
+                }
+                console.log("Total: ", result);
+
+                result /= arguments.length;
+                console.log("Média: ", result);
+            }
+            somar(10,10,10,50,47,6);
+        })()
+    </script>
+</body>
+</html>
