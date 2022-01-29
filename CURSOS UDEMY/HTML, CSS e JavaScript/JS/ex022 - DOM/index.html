@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DOM</h1>
+    <main>
+       <section id="sectionUM" class="sectionClassUM">
+           <h2 id="h2section">Começando a trabalhar com DOM</h2>
+           <p class="paragrafos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos fugiat impedit optio consectetur. Recusandae delectus temporibus animi dicta illum architecto eum tempore mollitia, ipsa harum vitae, commodi nemo, quo sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur consectetur nemo deserunt odio laudantium amet voluptas, minima hic, illo totam molestias modi, sed voluptates! Dolorum recusandae delectus ea reprehenderit ipsam?</p>
+       </section>
+
+       <section id="sectionDOIS" class="sectionClassDOIS">
+           <h3>Trabalhando com DOM</h3>
+           <p class="paragrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae ipsam ullam inventore repellat, quod harum ab. Veritatis veniam ipsam vitae et dolorum excepturi obcaecati fugit enim eius, nemo neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quo eius harum dolorum voluptatem, maxime quam quia in sed, ab sint nulla, atque optio ea deleniti aliquid illo libero. Ratione.</p>
+       </section>
+        
+    </main>
+
+    <script>
+
+//      Acessa o elemento através do ID
+        document.getElementById("h2section").textContent = "Altera o título com JS";
+
+//      Acessa o elemento atraves da CLASS (necessário passar o índice para acessar o objeto)
+        document.getElementsByClassName("paragrafos")[1].textContent = "Altera o paragráfo com JS";
+
+//      Para acessar deve passar no parâmetro a mesma forma que acessa um elemento através do CSS
+        document.querySelector("#sectionDOIS h3").textContent = "Altera o h3 com querySelector";
+
+//      Acessa da mesma forma, mas passando o indice
+        document.querySelectorAll(".paragrafos")[0].textContent = "Altera texto com querySelectorAll no JS";
+    </script>
+</body>
+</html>

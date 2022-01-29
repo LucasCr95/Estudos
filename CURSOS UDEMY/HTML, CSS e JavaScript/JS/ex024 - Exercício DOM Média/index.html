@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="beluga.js"></script>
+</head>
+<body>
+    <h1>Exercício DOM Média Aluno</h1>
+    <main>
+        <table class="tabelaAlunos">
+            <thead>
+                <th>Nome</th>
+                <th>Nota I</th>
+                <th>Nota II</th>
+                <th>Nota III</th>
+                <th>Nota IV</th>
+                <th>Média</th>
+            </thead>
+            <tbody>
+                <tr class="alunoNome">
+                    <td class="nomeAluno">Lucas</td>
+                    <td class="nota1Aluno">7.5</td>
+                    <td class="nota2Aluno">8.2</td>
+                    <td class="nota3Aluno">4.8</td>
+                    <td class="nota4Aluno">10</td>
+                    <td class="mediaAluno"></td>
+                </tr>
+                <tr class="alunoNome">
+                    <td class="nomeAluno">Matheus</td>
+                    <td class="nota1Aluno">8.2</td>
+                    <td class="nota2Aluno">7.5</td>
+                    <td class="nota3Aluno">3.8</td>
+                    <td class="nota4Aluno">10</td>
+                    <td class="mediaAluno"></td>
+                </tr>
+                <tr class="alunoNome">
+                    <td class="nomeAluno">Camila</td>
+                    <td class="nota1Aluno">9</td>
+                    <td class="nota2Aluno">7.5</td>
+                    <td class="nota3Aluno">5</td>
+                    <td class="nota4Aluno">10</td>
+                    <td class="mediaAluno"></td>
+                </tr>
+                <tr class="alunoNome">
+                    <td class="nomeAluno">Fernanda</td>
+                    <td class="nota1Aluno">9</td>
+                    <td class="nota2Aluno">8</td>
+                    <td class="nota3Aluno">7</td>
+                    <td class="nota4Aluno">10</td>
+                    <td class="mediaAluno"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script>
+        (function(){
+            var trs = document.querySelectorAll(".tabelaAlunos tbody .alunoNome");
+
+           for(var x = 0; trs[x]; x++){
+               var listaAlunos = trs[x];
+               console.log(listaAlunos);
+
+               var nota1, nota2, nota3, nota4, media;
+
+               var tds = listaAlunos.querySelectorAll("td");
+               console.log(tds);
+
+               nota1 = parseFloat(tds[1].textContent);
+               nota2 = parseFloat(tds[2].textContent);
+               nota3 = parseFloat(tds[3].textContent);
+               nota4 = parseFloat(tds[4].textContent);
+
+               media = calcularMedia(nota1, nota2, nota3, nota4);
+
+               listaAlunos.querySelector(".mediaAluno").textContent  = media;
+
+           }
+        })()
+    </script>
+</body>
+</html>

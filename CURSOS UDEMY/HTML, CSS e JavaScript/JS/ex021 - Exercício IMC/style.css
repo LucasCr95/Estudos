@@ -16,17 +16,3 @@ h1{
 main{
     padding: 1em;
 }
-table{
-    border-collapse: collapse;
-    margin: auto;
-}
-tr td{
-    border: .10rem solid black;
-    padding: .3em 1em;
-}
-tr:nth-child(even) td{
-    background-color: #f3f3f3;
-}
-tr:nth-child(odd) td{
-    background-color: #cecece;
-}

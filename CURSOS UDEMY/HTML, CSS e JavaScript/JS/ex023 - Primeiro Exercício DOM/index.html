@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DOM</h1>
+    <main>
+        <form>
+            <legend>Nome:</legend>
+            <input type="text" id="name">
+            <input type="submit" onclick="enviar()">
+        </form>
+      <div id="msg"></div>
+    </main>
+
+    <script>
+        function enviar(){
+            var name = (document.getElementById("name").value).toString();
+            if(name){
+                document.getElementById("msg").innerHTML = "Bem vindo, <b>" + name + "</b>";
+                document.getElementById("name").disabled = true;
+            } else{
+                alert("[ ERRO ] Digite o nome")
+            }
+        }
+    </script>
+</body>
+</html>

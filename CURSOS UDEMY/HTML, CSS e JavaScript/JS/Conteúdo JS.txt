@@ -21,3 +21,5 @@
 - variavel.getDay(); 		-> Retorna o dia da semana
 let variavel = new Object()	-> Cria um objeto
 variavel.... = "";		-> Atribui uma propriedade a um objeto
+debugger 			-> Força uma parada no código
+- .textContent			-> Altera o texto do elemento
