@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Objetos em JavaScript</h1>
+    <main>
+       
+    </main>
+
+    <script>
+
+//      Cria função     ==================
+        function mudaCor(cor){
+            this.cor = cor;
+//          this.   -> faz referência ao objeto     ================
+        }
+
+//      Cria um função pra criar instancias     =============
+
+//      Função usada como construtor, boa prática comecar com letra maiúscula   ================
+        function Tenis(preco, tamanho, cor){
+            this.preco = preco || 0.00;
+            this.tamanho = tamanho || 00;
+            this.cor = cor || "";
+            this.mudarCor = mudaCor
+        }
+
+//      Cria um objeto (sintaxe literal)    ===========
+        var tenisOakley = {
+            modelo: "Modoc",
+            cor: "Preto",
+            mudarCor: mudaCor
+        }
+        var tenisOakley1 = {
+            modelo: "Modoc",
+            cor: "Bege",
+            mudarCor: mudaCor
+        }
+
+        var tenisOakley2 = new Tenis(499.99, 39, "Marrom");// ======== Passando os valores por parâmetro
+        var tenisOakley3 = new Tenis(499.99, 38, "Cinza");
+
+         
+
+    </script>
+</body>
+</html>
