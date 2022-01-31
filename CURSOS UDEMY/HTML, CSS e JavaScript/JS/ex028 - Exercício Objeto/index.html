@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercício Objeto</h1>
+    <main>
+       
+    </main>
+
+    <script>
+     
+        var pessoa1 = {
+            nome: "Jose",
+            sobrenome: "Lucas",
+            cpf: 516546531
+        };
+        var pessoa2 = {
+            nome: "Fernanda",
+            sobrenome: "Albuquerque",
+            cpf: 798564123
+        };
+        var pessoa3 = {
+            nome: "Thiago",
+            sobrenome: "Fabrico",
+            cpf: 132165498
+        };
+
+/* 
+        console.log(pessoa1.nome + " " + pessoa1.sobrenome);
+        console.log(pessoa2.nome + " " + pessoa2.sobrenome);
+        console.log(pessoa3.nome + " " + pessoa3.sobrenome); 
+*/
+
+        for(var i = 1; i <= 3; i++){
+            console.log(window["pessoa" + i].nome + " " + window["pessoa" + i].sobrenome + " - " + window["pessoa" + i].cpf);
+        }
+        console.log(" ------------- ");
+
+        var pessoas = [
+            pessoa1,
+            pessoa2,
+            pessoa3
+        ]
+
+        for(var x = 0; pessoas[x]; x++){
+            console.log(pessoas[x].nome + " " + pessoas[x].sobrenome + " - " + pessoas[x].cpf);
+        }
+    </script>
+</body>
+</html>
