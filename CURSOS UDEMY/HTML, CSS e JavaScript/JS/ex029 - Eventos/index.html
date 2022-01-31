@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Eventos</h1>
+    <main>
+        <button id="btn1">Botão I</button>
+        <button id="btn2">Botão II</button>
+    </main>
+
+    <script>
+        btn1 = document.querySelector("#btn1");
+        btn2 = document.querySelector("#btn2");
+
+        btn1.addEventListener("click", clicar);
+        btn2.addEventListener("click", clicar);
+
+        function clicar(){
+            return alert("[CLICADO]");
+        }
+        
+        
+        
+
+
+    </script>
+</body>
+</html>
