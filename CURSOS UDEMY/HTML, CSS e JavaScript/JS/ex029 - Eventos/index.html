@@ -12,20 +12,41 @@
     <main>
         <button id="btn1">Botão I</button>
         <button id="btn2">Botão II</button>
+
+        <div id="div1">
+            texto da div
+            <span>texto da span</span>
+        </div>
     </main>
 
     <script>
         btn1 = document.querySelector("#btn1");
         btn2 = document.querySelector("#btn2");
 
+//      Adiciona um evento, sempre passar dois parâmetros: o evento e a função  =============
         btn1.addEventListener("click", clicar);
         btn2.addEventListener("click", clicar);
 
         function clicar(){
             return alert("[CLICADO]");
         }
+
+/* 
+    Propagação de eventos =============        
+*/
         
-        
+        var div1 = document.querySelector("#div1");
+        var span = document.querySelector("#div1 span");
+
+        div1.addEventListener("click", function(){
+            console.log("[CLICADO DIV]");
+        });
+        span.addEventListener("click", function(){
+            console.log("[CLICADO SPAN]");
+        });
+        document.addEventListener("click", function(){
+            console.log("[CLICADO DOCUMENT]")
+        })
         
 
 
