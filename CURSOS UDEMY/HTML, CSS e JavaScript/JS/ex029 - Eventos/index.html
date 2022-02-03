@@ -17,6 +17,15 @@
             texto da div
             <span>texto da span</span>
         </div>
+
+        <div id="container">
+            <h1>Delegação de Eventos</h1>
+            <ul>
+                <li>lista 1</li>
+                <li>lista 2</li>
+                <li>lista 3</li>
+            </ul>
+        </div>
     </main>
 
     <script>
@@ -32,23 +41,44 @@
         }
 
 /* 
-    Propagação de eventos =============        
+        Propagação de eventos =============        
 */
-        
         var div1 = document.querySelector("#div1");
         var span = document.querySelector("#div1 span");
 
         div1.addEventListener("click", function(){
             console.log("[CLICADO DIV]");
         });
-        span.addEventListener("click", function(){
+        span.addEventListener("click", function(e){
             console.log("[CLICADO SPAN]");
+            e.stopPropagation();// Para de propagar o evento =====================
         });
-        document.addEventListener("click", function(){
-            console.log("[CLICADO DOCUMENT]")
-        });
+        document.addEventListener("click", function(evt){
+            // Objeto Event    =============
+            console.log("[CLICADO DOCUMENT]");
 
-// Passando o terceiro parâmetro "true" ele muda a ordem de propagação do evento - de fora para dentro
+            console.log(evt.currentTarget);//   Elemento ao qual foi atrelado o evento    ==========
+            console.log(this);//    Elemento atrelhado ao evento   =============
+            console.log(evt.target);//  Quem disparou o evento   ================
+        }/* ,true */);//    Passando o terceiro parâmetro "true",muda a ordem de propagação do evento
+
+//          DELEGAÇÃO DE EVENTOS
+        var $ul = document.querySelector("ul");
+        var $lis = document.querySelectorAll("li");
+/* 
+        for(var x = 0; $lis[x]; x++){ // Não possível atrelhar evento em "li" (Node List), assim necessário o loop =======
+            $lis[x].addEventListener("click", function(e){
+                console.log("[ CLICOU NA LI ]");
+                e.stopPropagation();
+            });
+        } 
+*/      
+        $ul.addEventListener("click", function(e){
+            e.stopPropagation();
+            console.log(e.currentTarget);//   Elemento ao qual foi atrelado o evento    ==========
+            console.log(this);//    Elemento atrelhado ao evento   =============
+            console.log(e.target);//  Quem disparou o evento   ================
+        })
 
     </script>
 </body>
