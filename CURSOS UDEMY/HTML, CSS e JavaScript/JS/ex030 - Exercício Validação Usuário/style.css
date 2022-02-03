@@ -10,21 +10,11 @@
     font-family: sans-serif;
     font-family: 'Encode Sans Condensed';
 }
+main{
+    padding: 0 2em;
+}
 body{
     background-color: lightgray;
-    background-image: url(imagens/bg.jpg);
-    background-attachment: fixed;
-/*
-    Imagem de fundo fixa
-*/
-    background-size: cover;
-/*  
-    imagem ocupando a tela inteira
-*/
-    background-position: right bottom;
-/*
-    Imagem alinhada para a direita e para baixo,, declarações na horizontal e na vertical
-*/
 }
 h1{
     background-color: rgba(11, 11, 71, 0.500);
@@ -51,34 +41,18 @@ section{
     border-radius: 0 0 5px 5px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.300);
 }
-
-
-                /*PARAGRÁFOS*/
 p.one{
     font-size: 1.3em;
     font-variant: small-caps;
-/*
-    Texto com formato de letras maiúsculas, mas com a primeira letra maior
-*/
     margin: 0 0 15px;
 }
 p.two{
     text-transform: uppercase;
-/*
-    Texto todo maiúsculo ou minúsculo
-*/
 }
-
-
-                /*LISTAS*/
 ul{
     list-style-position: inside;
     columns: 2;
 }
-
-
-
-                /*LISTAS DE DEFINIÇÃO*/
 dl{
     padding: 10px;
     margin-top: 15px;
@@ -86,16 +60,10 @@ dl{
 dd{
     margin-left: 30px;
 }
-
-
-                /*TABELAS*/
 table{
     border: 1px solid black;
     margin: auto;
     border-collapse: collapse;
-/*
-    Por padrão o valor da propriedade é 'separate'.
-*/
 }
 th{
     padding: 5px;
@@ -107,9 +75,6 @@ td{
     text-align: center;
     padding: 5px;
 }
-
-
-                /*FORMULÁRIOS*/
 form{
     margin: 15px auto;
 }
@@ -119,7 +84,6 @@ fieldset{
     width: 60%;
 }
 legend{
-    text-align: center;
     font-size: 1.1em;
 }
 input{
@@ -132,12 +96,9 @@ input{
     border-radius: 5px;
     margin-bottom: 10px;
 }
-input:focus{
+input[type = "text"]:focus, input[type = password]:focus{
     background-color: white;
-/*
-Indicar a mudança de background quando colocar pra digitar
-*/
-}
+} 
 .sexo{
     margin-bottom: 5px;
 }
@@ -156,57 +117,26 @@ input[type=checkbox]{
 }
 textarea{
     font-size: 1.1em;
-    resize: none;   /* "resize" -> Retirar a opção de ajuste do campo */
+    resize: none;
     padding: 5px;
     letter-spacing: normal;
 }
 input[type=submit], [type=reset]{
-    margin: 15px auto;
-    padding: 10px;
-    text-align: center;
-    width: 50%;
+    padding: .5em;
+    width: 45%;
+    display: block;
 }
 input[type=submit]:hover, [type=reset]:hover{
     background-color: #999999;
     color: white;
     font-weight: bolder;
 }
-
-/*
-                SELETORES COMPOSTOS
-
-:nth-child(...) -> Usado para indicar o elemento desejado, elemento que vem antes dos 'dois pontos'.
-
-:not(...) -> Usado para evitar um seletor (ex: section:not(.destaque) -> seleciona todas as seções, menos a que tenha class="destaque").
-    
-'seletor' + 'seletor' -> Indicar o primeiro elemento (ex: "h3 + p" -> seleciona o primeiro 'p' depois de um 'h3').
-
-'seletor' ~ 'seletor' -> Indica todos os elementos logo após o elemento que for indicado antes do sinal '~'. (ex: "h3 ~ p" -> todos os 'p' seguinte do 'h3').  
-
-
-SELETORES DE ATRIBUTOS
-
-[href="#"] -> Todo elemento que tenha o atributo "href="#" .
-
-[href^="http://"] -> Todo elemento que tenha o atributo "href" que se inicia com "http://" .
-
-[href$=".pdf"] -> Todo elemento que tenha o atributo "href" que termina com ".pdf" .
-
-    
-*/
-
-                /*FLEXBOX*/
-
 .flexbox{
     border: .10rem solid black;
     padding: 1%;
     display: flex;
     flex-flow: row wrap;
-/*  ATALHO
-1º - 'flex-direction' -> Definir a direção dos elementos
-2º - 'flex-wrap' -> Indicar se haverá quebra de linha se o espaço não for suficiente.'
-*/
-    justify-content: space-around;/* -> Alinhar na vertical*/
+    justify-content: space-around;
 }							
 .flexbox-div{
     text-align: center;
@@ -215,22 +145,6 @@ SELETORES DE ATRIBUTOS
     background-color: blue;
     margin: .5em
 }
-/*      Propriedades no Container
-    'align-intems' -> Alinhar os elementos na horizontal.
-    'align-content' -> Agrupar o conteúdo em um determinado local no container.
-    
-    Propriedades no elemento filho
-    'flex-basis' -> Igual ao 'width'.
-    'flex-grow' -> O elemento definido vai ocupar o restante do espaço.
-    flex-shrink -> Diminui o elemento escolhido para que o grupo se encaixe em apenas uma linha.
-
-    ATALHO: 'flex:' -> grow, shrink, basis.
-*/
-
-
-
-
-                /*LAYOUT'S COM FLOAT E CLEAR*/
 .class-zero{
     margin-top: 30px;
 }
@@ -239,9 +153,6 @@ SELETORES DE ATRIBUTOS
     height: 100px;
     padding: 30px;
     box-sizing: border-box;
-/*
-    'box-sizing: border-box' - evitar que o padding e border interfiram no tamanho final da box       
-*/
 }
 .class-two{
     background-color: blue;
@@ -259,10 +170,3 @@ SELETORES DE ATRIBUTOS
     height: 50px;
     clear: both;
 }
-/* 
-    - 'float': posicionar elementos
-
-    - 'clear': fazer com que os  elementos posteriores não ocupem o espaço deixado pelo <float>
-
-    - 'overflow': tratar o conteúdo que exede ao elemento
-*/

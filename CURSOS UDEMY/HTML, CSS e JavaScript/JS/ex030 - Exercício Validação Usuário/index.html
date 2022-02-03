@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercício Validação Usuário</h1>
+    <main>
+       <form action="#">
+           <label for="loginUsuario">Digite o usuário</label>
+           <input type="text" id="loginUsuario" name="loginUsuario">
+
+           <label for="senhaUsuario">Digite a senha</label>
+           <input type="password"  id="senhaUsuario" name="senhaUsuario">
+           
+           <input type="submit" value="Logar" id="logar">
+           <input type="reset" value="Limpar" >
+       </form>
+    </main>
+
+    <script>
+        var valida = document.querySelector("#logar");
+        valida.addEventListener("click", function(){
+            var usuario = document.querySelector("#loginUsuario");
+            var senha = document.querySelector("#senhaUsuario");
+
+            if(usuario.value === "" || senha.value === ""){
+               alert("[ERRO] - Preencha os campos corretamente!")
+
+               limpar();
+            }
+            limpar();
+        })
+
+        function limpar(){
+            document.getElementById("loginUsuario").value = "";
+            document.getElementById("senhaUsuario").value = "";
+        }
+
+    </script>
+</body>
+</html>
