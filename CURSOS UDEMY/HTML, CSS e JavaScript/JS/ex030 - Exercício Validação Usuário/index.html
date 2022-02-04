@@ -10,7 +10,7 @@
 <body>
     <h1>Exercício Validação Usuário</h1>
     <main>
-       <form action="#">
+       <form action="#" method="post" id="formulario">
            <label for="loginUsuario">Digite o usuário</label>
            <input type="text" id="loginUsuario" name="loginUsuario">
 
@@ -23,18 +23,20 @@
     </main>
 
     <script>
-        var valida = document.querySelector("#logar");
-        valida.addEventListener("click", function(){
-            var usuario = document.querySelector("#loginUsuario");
-            var senha = document.querySelector("#senhaUsuario");
+        (function(){
+            var valida = document.getElementById("formulario");
+            var usuario = document.getElementById("loginUsuario");
+            var senha = document.getElementById("senhaUsuario");
 
-            if(usuario.value === "" || senha.value === ""){
+            valida.addEventListener("submit", function(e){
+            if(!usuario.value || !senha.value){
                alert("[ERRO] - Preencha os campos corretamente!")
-
+               e.preventDefault(); // Impede o envio do formulário, previni o evento padrão
                limpar();
             }
             limpar();
-        })
+            })
+        })()
 
         function limpar(){
             document.getElementById("loginUsuario").value = "";
