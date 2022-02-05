@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercício TextArea</h1>
+    <main>
+        <div id="divArea">
+            <textarea name="" id="txtArea" cols="60" rows="10" maxlength="200s"></textarea>
+            <p>Restam <span id="restante"></span> caracteres</p>
+        </div>
+    </main>
+
+    <script>
+        (function(){
+            var txtArea = document.getElementById("txtArea");
+            var maximo = txtArea.maxLength;
+            var restante = document.getElementById("restante");
+            var txtResta = document.querySelector("#divArea p");
+            caracteresFaltantes(maximo);
+            txtArea.addEventListener("input", checkLength);
+            txtResta.style.display = "block";
+
+            function checkLength(){
+                var numeroDigitado = this.value.length;
+                var resto = parseInt(maximo) - parseInt(numeroDigitado);
+                caracteresFaltantes(resto);
+            }
+            function caracteresFaltantes(n){
+                restante.textContent = n;
+            }
+
+/*
+            txtArea.addEventListener("keypress", keypress);
+            txtArea.addEventListener("keydown", keydown);
+            txtArea.addEventListener("keyup", keyup);
+
+
+            function keypress(e){
+                console.log("keypress ", this.value);
+            }
+            function keydown(e){
+                console.log('keydown ', this.value);
+            }
+            function keyup(e){
+                console.log('keyup ', this.value);
+            }
+*/
+        })()
+    </script>
+</body>
+</html>

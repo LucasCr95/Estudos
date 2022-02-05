@@ -11,7 +11,7 @@
     font-family: 'Encode Sans Condensed';
 }
 main{
-    padding: 0 2em;
+    padding: 1em;
 }
 body{
     background-color: lightgray;
@@ -40,6 +40,9 @@ section{
     background-color: rgba(255, 255, 255, 0.500);
     border-radius: 0 0 5px 5px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.300);
+}
+p{
+    display: block;
 }
 p.one{
     font-size: 1.3em;
@@ -114,6 +117,14 @@ input[type=checkbox]{
     display: inline-block;
     width: auto;
     margin-left: 10px;
+}
+#divArea{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+#divArea p{
+    display: none;
 }
 textarea{
     font-size: 1.1em;
