@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-family: 'Encode Sans Condensed';
+}
+main{
+    padding: 0 2em;
+}
+body{
+    background-color: lightgray;
+}
+h1{
+    background-color: rgba(11, 11, 71, 0.500);
+    color: white;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 15px;
+    font-size: 2.5em;
+    font-variant: small-caps;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+}
+h2{
+    background-color: rgba(128, 128, 128, 0.500);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+section{
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.500);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.300);
+}
+p.one{
+    font-size: 1.3em;
+    font-variant: small-caps;
+    margin: 0 0 15px;
+}
+p.two{
+    text-transform: uppercase;
+}
+ul{
+    list-style-position: inside;
+    margin: 2em 0;
+}
+li{
+
+}
+dl{
+    padding: 10px;
+    margin-top: 15px;
+}
+dd{
+    margin-left: 30px;
+}
+table{
+    border: 1px solid black;
+    margin: auto;
+    border-collapse: collapse;
+}
+th{
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+form{
+    margin: 15px auto;
+}
+fieldset{
+    padding: 10px;
+    margin: 15px auto;
+    width: 60%;
+}
+legend{
+    font-size: 1.1em;
+}
+input{
+    width: 50%;
+    padding: 5px;
+    background-color: #d3d3d3;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+input[type="text"]{
+    display: block;
+}
+input[type = "text"]:focus, input[type = password]:focus{
+    background-color: white;
+} 
+.sexo{
+    margin-bottom: 5px;
+}
+input[type=radio]{
+    width: auto;
+    display: inline-block;
+}
+.masc, .fem{
+    display: inline-block;
+    margin-left: 35px;
+}
+input[type=checkbox]{
+    width: auto;
+}
+textarea{
+    font-size: 1.1em;
+    resize: none;
+    padding: 5px;
+    letter-spacing: normal;
+}
+input[type=submit], [type=reset]{
+    padding: .5em;
+    width: auto;
+    display: block;
+}
+input[type=submit]:hover, [type=reset]:hover{
+    background-color: #999999;
+    color: white;
+    font-weight: bolder;
+}
+.flexbox{
+    border: .10rem solid black;
+    padding: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}							
+.flexbox-div{
+    text-align: center;
+    color: white;
+    width: 10em;
+    background-color: blue;
+    margin: .5em
+}
+.class-zero{
+    margin-top: 30px;
+}
+.class-one{
+    background-color: red;
+    height: 100px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.class-two{
+    background-color: blue;
+    height: 400px;
+    width: 75%;
+    float: right;
+}
+.class-three{
+    background-color: yellow;
+    height: 300px;
+    width: 25%;
+}
+.class-four{
+    background-color: green;
+    height: 50px;
+    clear: both;
+}

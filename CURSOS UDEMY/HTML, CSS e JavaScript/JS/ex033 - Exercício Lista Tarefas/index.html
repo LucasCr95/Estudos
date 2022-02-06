@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercício Lista Tarefas</h1>
+    <main>
+        <label for="adicionaTarefa">Adicionar tarefa:</label>
+        <input type="text" id="txtTarefa">
+        <input type="submit" value="Adicionar" id="addTarefa">
+
+        <ul id="listaTarefa">
+            <li>Lavar o carro <input type="checkbox"></li>
+            <li>Lavar a moto <input type="checkbox"></li> 
+            <li>Estudar <input type="checkbox"></li>
+        </ul>
+        
+    </main>
+
+    <script>
+        (function(){
+            'use strict'
+
+            var $tarefa = document.getElementById("txtTarefa");
+            var $adiciona = document.getElementById("addTarefa");
+            var $lista = document.getElementById("listaTarefa");
+
+            $adiciona.addEventListener("click", addTarefa);
+            $tarefa.addEventListener("keyup", function(e){
+                if(e.keyCode === 13){ // Evento do teclado verifica se digitou a tecla "ENTER"
+                    addTarefa();
+                }
+            });
+
+            function addTarefa(){
+                var tarefa = '<li>' + $tarefa.value + '<input type="checkbox"></li>';
+                $lista.innerHTML += tarefa;
+                limpar(); 
+            };
+
+            function limpar(){
+                $tarefa.value = "";
+                $tarefa.focus(); // -> Foco no input depois de add a tarefa
+            };
+        })()
+    </script>
+</body>
+</html>
