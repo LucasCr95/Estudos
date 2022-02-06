@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Execício Envio Formulário</h1>
+    <main> 
+      <form action="#">
+          <form action="#">
+            <label for="nameUser">Nome:</label>
+            <input type="text" name="nameUser" id="nameUser">
+            <label for="emailUser">Email:</label>
+            <input type="email" name="emailUser" id="emailUser">
+            <label for="phoneUser">Telefone:</label>
+            <input type="tel" name="phoneUser" id="phoneUser">
+            
+            <textarea name="condicoes" id="termos" cols="30" rows="7" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab quaerat culpa explicabo possimus delectus commodi eum vero? Dolor adipisci ab soluta doloremque fuga in non sapiente laborum quidem distinctio!</textarea>
+            <label for="checkAceito"><input type="checkbox" name="accepted" id="checkAceito" checked>Aceito os termos e condições</label>
+
+            <input type="submit" value="Enviar" id="buttonSubmit">
+            <input type="reset" value="Limpar">
+          </form>
+      </form>
+    </main>
+    <script>
+        (function(){
+            "use strict"
+            var $name = document.getElementById("nameUser");
+            var $email = document.getElementById("emailUser");
+            var $tel = document.getElementById("phoneUser");
+            var $checkAceito = document.getElementById("checkAceito");
+            var $buttonSubmit = document.getElementById("buttonSubmit");
+            toggleCheck();
+
+            $checkAceito.addEventListener("change", function(){
+                toggleCheck();
+/*          if($checkAceito.checked === true){
+                    $buttonSubmit.disabled = false;
+                } else{
+                    $buttonSubmit.disabled = true;
+                } 
+*/
+            })
+
+            function toggleCheck(){
+                $buttonSubmit.disabled = !$checkAceito.checked;
+            }
+
+        })()
+    </script>
+</body>
+</html>
