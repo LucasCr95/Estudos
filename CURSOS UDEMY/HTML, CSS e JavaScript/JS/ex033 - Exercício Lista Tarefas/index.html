@@ -15,9 +15,9 @@
         <input type="submit" value="Adicionar" id="addTarefa">
 
         <ul id="listaTarefa">
-            <li>Lavar o carro <input type="checkbox"></li>
-            <li>Lavar a moto <input type="checkbox"></li> 
-            <li>Estudar <input type="checkbox"></li>
+            <li>Lavar o carro</li>
+            <li>Lavar a moto</li> 
+            <li>Estudar</li>
         </ul>
         
     </main>
@@ -27,18 +27,28 @@
             'use strict'
 
             var $tarefa = document.getElementById("txtTarefa");
+            var $lis = document.querySelectorAll("li");
             var $adiciona = document.getElementById("addTarefa");
             var $lista = document.getElementById("listaTarefa");
 
             $adiciona.addEventListener("click", addTarefa);
+
             $tarefa.addEventListener("keyup", function(e){
                 if(e.keyCode === 13){ // Evento do teclado verifica se digitou a tecla "ENTER"
                     addTarefa();
                 }
             });
 
+            for(var i = 0; i < $lis.length; i++){
+                $lis[i].addEventListener("click", toggleDone);
+            };
+
+            function toggleDone(){
+                this.classList.toggle("done");// -> evento de alternância
+            };
+
             function addTarefa(){
-                var tarefa = '<li>' + $tarefa.value + '<input type="checkbox"></li>';
+                var tarefa = "<li>" + $tarefa.value + "</li>";
                 $lista.innerHTML += tarefa;
                 limpar(); 
             };

@@ -16,6 +16,10 @@ main{
 body{
     background-color: lightgray;
 }
+.done{
+    text-decoration: line-through;
+    color: grey;
+}
 h1{
     background-color: rgba(11, 11, 71, 0.500);
     color: white;
@@ -52,9 +56,6 @@ p.two{
 ul{
     list-style-position: inside;
     margin: 2em 0;
-}
-li{
-
 }
 dl{
     padding: 10px;
