@@ -39,24 +39,57 @@
                 }
             });
 
-            for(var i = 0; i < $lis.length; i++){
-                $lis[i].addEventListener("click", toggleDone);
+            $lista.addEventListener("click", function(e){
+                if(e.target.nodeName === "LI"){
+                    // toggleDone(e.target);
+
+                    removeTarefa(e.target);
+                }
+            });
+
+            function removeTarefa(li){
+                if(confirm("Excluir a tarefa '" + li.textContent + "' ?")){
+                    li.parentNode.removeChild(li);
+                }
             };
 
-            function toggleDone(){
-                this.classList.toggle("done");// -> evento de alternância
+/*             for(var i = 0; i < $lis.length; i++){
+                addEvent($lis[i]);
             };
+ */
 
+/*             function toggleDone(li){
+                li.classList.toggle("done");// -> evento de alternância
+            };
+ */
             function addTarefa(){
-                var tarefa = "<li>" + $tarefa.value + "</li>";
+/*                 var tarefa = "<li>" + $tarefa.value + "</li>";
                 $lista.innerHTML += tarefa;
-                limpar(); 
+ */               
+                if($tarefa.value !== ""){
+                var li = document.createElement("li");
+                var txt = document.createTextNode($tarefa.value);
+
+                li.appendChild(txt);
+                $lista.appendChild(li);
+
+                // addEvent(li);
+
+                limpar();     
+                }else{
+                    alert("[ Campo vazio ]")
+                }
             };
 
+/*             function addEvent(li){
+                li.addEventListener("click", toggleDone);
+            }
+ */
             function limpar(){
                 $tarefa.value = "";
                 $tarefa.focus(); // -> Foco no input depois de add a tarefa
             };
+            
         })()
     </script>
 </body>
