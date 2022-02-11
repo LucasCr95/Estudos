@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <label for="menu"><i class="icon icon-menu fas fa-bars"></i></label>
-        <nav>
+        <i class="icon icon-menu fas fa-bars" aria-controls="mainMenu" aria-expanded="false"></i>
+        <nav id="mainMenu">
             <ul id="nav-pages">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Projetos</a></li>
@@ -23,11 +23,17 @@
     <main>
       <script>
           (function(){
-            var check = document.querySelector(".icon");
-            var menu = document.querySelector("nav");
+            var $check = document.querySelector(".icon");
+            // var menu = document.querySelector("nav");
+            var ariaControl = $check.getAttribute("aria-controls");
+            var $navMenu = document.getElementById(ariaControl);
 
-            check.addEventListener("click", function(){
-                menu.classList.toggle("menu-transition");
+            $check.addEventListener("click", function(){
+                $navMenu.classList.toggle("menu-transition");
+                var ariaExpanded = this.getAttribute("aria-expanded") === "true";
+                
+                $check.setAttribute("aria-expanded", !ariaExpanded);
+                $navMenu.setAttribute("aria-expanded", !ariaExpanded);
             });
 
           })()
