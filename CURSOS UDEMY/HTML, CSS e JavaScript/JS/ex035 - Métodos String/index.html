@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+       (function (){
+           var nome = "Jose Lucas Cruz";
+
+           var nomeFormatado = formatarNome(nome);
+
+           function formatarNome(nome){
+               var ultimoEspaco = nome.lastIndexOf(" ");
+
+               if(ultimoEspaco <= 0){
+                   return nome;
+                }else{
+                    var ultimoNome = nome.substring(ultimoEspaco + 1);
+
+                    var inicioNome = nome.substring(0, ultimoEspaco);
+
+                    return ultimoNome + ", " + inicioNome;
+                }
+            }
+
+            console.log(nomeFormatado);
+       })() 
+    </script>
+    
+</head>
+<body>
+    <h1>Métodos String</h1>
+    <main>
+      
+    </main>
+</body>
+</html>
