@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2afee08afa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <label for="menu"><i class="icon icon-menu fas fa-bars"></i></label>
+        <nav>
+            <ul id="nav-pages">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Certificados</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Exercício Hambuerguer Menu</h1>
+    <main>
+      <script>
+          (function(){
+            var check = document.querySelector(".icon");
+            var menu = document.querySelector("nav");
+
+            check.addEventListener("click", function(){
+                menu.classList.toggle("menu-transition");
+            });
+
+          })()
+      </script>
+    </main>
+</body>
+</html>
