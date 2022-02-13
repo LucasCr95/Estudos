@@ -6,33 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function(){
+           window.addEventListener('load', init)
+
+           function init(){
+               var $paragrafos = document.querySelectorAll('p');
+
+               for(var i = 0; $paragrafos[i]; i++){
+                    $paragrafos[i].innerHTML = txtFormatado($paragrafos[i].innerHTML);
+               }
+           }
+
+           function txtFormatado(texto){
+                if(texto.length <= 200){
+                    return texto;
+                }else{
+                    var txtLimitado = texto.slice(0, 200);
+                    return txtLimitado + '...';
+                }
+           }
+        })()
+    </script>
 </head>
 <body>
     <h1>Exercício Métodos String</h1>
     <main>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis est velit repellat tenetur impedit debitis doloremque fugit deserunt, accusamus dolores nihil optio quasi, sunt nemo dolore consectetur nisi! Soluta, atque!</p>
+      <p>Lorem ipsum dolor <b>sit amet</b>, consectetur adipisicing elit. Nobis est velit repellat tenetur impedit debitis doloremque fugit deserunt, accusamus dolores nihil optio quasi, sunt nemo dolore consectetur nisi! Soluta, atque!</p>
 
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem voluptas, dolorem placeat atque soluta magnam aut vel sint corrupti dolorum alias modi animi est aperiam voluptatem sapiente rerum minima.</p>
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet blanditiis, neque voluptates mollitia animi quos incidunt quae cumque in beatae. Repudiandae hic temporibus atque dolorem! A similique animi accusantium facere!</p>
+      
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt error sequi consectetur nisi, animi quam modi nemo non doloribus recusandae quidem aliquid atque, neque tempora tempore inventore asperiores perspiciatis libero!</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam, dolorem modi eligendi reiciendis consequatur .</p>
     </main>
 </body>
 
-    <script>
-        (function(){
-            var paragrafos = document.querySelectorAll("p");
-
-            for(var i = 0; paragrafos[i]; i++){
-                var caracteres = paragrafos[i].textContent;
-
-                console.log(caracteres);
-
-                txtMaxLength(caracteres);
-            }
-
-            function txtMaxLength(caracteres){
-            }
-
-        })()
-    </script>
 </html>
