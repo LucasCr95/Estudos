@@ -8,5 +8,5 @@ function calcularMedia(){
     }
     result /= arguments.length; 
     
-    return result;
+    return result.toFixed(2); 
 }

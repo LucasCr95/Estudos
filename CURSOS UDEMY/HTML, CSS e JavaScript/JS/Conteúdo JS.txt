@@ -23,3 +23,10 @@ let variavel = new Object()	-> Cria um objeto
 variavel.... = "";		-> Atribui uma propriedade a um objeto
 debugger 			-> Força uma parada no código
 - .textContent			-> Altera o texto do elemento
+- Math.round()		-> Arredonda número pra mais próximo
+- Math.floor()		-> Arrendo número pra menos
+- Math.ceil()		-> Arredonda número pra mais
+- Math.pow()		-> converter exponenciação
+- Math.sqrt() 		-> mostra raiz quadrada
+- Math.cbrt()		-> raiz cúbica
+- Math.randon()		-> número aleatório
