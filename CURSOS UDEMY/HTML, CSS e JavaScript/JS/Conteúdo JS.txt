@@ -30,3 +30,4 @@ debugger 			-> Força uma parada no código
 - Math.sqrt() 		-> mostra raiz quadrada
 - Math.cbrt()		-> raiz cúbica
 - Math.randon()		-> número aleatório
+- array.every()		-> Verifica todos os elementos de uma array
