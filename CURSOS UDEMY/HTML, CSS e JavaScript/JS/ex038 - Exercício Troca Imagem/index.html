@@ -6,11 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <link rel="stylesheet" href="style.css">
+    <script src="beluga.js"></script>
+    <script>
+        (function(){
+            window.addEventListener('load', init);
+            
+            function init(){
+                var n = sortearNumero(2) + 1;
+                document.querySelector('body').style.background = 'url(imagens/img' + n +'.jpg)';
+            };
+        })() 
+    </script>
+
 </head>
 <body>
-    <h1></h1>
+    <h1>Estudo JS: Troca de imagenss</h1>
     <main>
-      
     </main>
 </body>
 </html>

@@ -11,7 +11,7 @@ function calcularMedia(){
     return result.toFixed(2); 
 }
 
-function sorteiaNumero(n){
-    var num  = Math.floor(Math.random() * (n + 1)); 
+function sortearNumero(n){
+    var num  = Math.floor(Math.random() * n); 
     return num;
 };
