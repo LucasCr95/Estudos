@@ -14,7 +14,7 @@
     </main>
 
     <script>
-        var arr = [7, 6, 5, 'Olá', 4, 'Mundo', 3, '!', 2, 1];
+        var arr = [1, 2, 4, 7, 6, 5, 'Olá', 4, 'Mundo', 3, '!', 2, 1];
         
 //      Verifica todos os elementos, se todos forem 'true', retorna 'true' =========
         var soNumeros = arr.every(function(elem){
@@ -28,11 +28,16 @@
         });
         console.log(aoMenosUmNumero);
 
-//      Recmgtorna uma array com os elementos que correspondem a condição
+//      Retorna uma array com os elementos que correspondem a condição
         var retornaSomenteString = arr.filter( function(elem){
             return typeof elem === 'string';
         });
         console.log(retornaSomenteString);
+
+        var retornaSomenteNumeros = arr.filter( function(elem){
+            return typeof elem === 'number';
+        });
+        console.log(retornaSomenteNumeros);
 
 //      A cada índice no array executa a função(loop) ==========
         arr.forEach(function(elem, i, ar){
@@ -43,6 +48,53 @@
         var posicaoString = arr.indexOf('Mundo');
         console.log( 'Posição da string: ', posicaoString);
 
+//      Elementos  iguais, aponta o último
+        var posicaoString2 = arr.lastIndexOf(4);
+        console.log('Posição da string com lastIndexOf: ', posicaoString2);
+
+//      Aplica a função em cada um dos elementos da array, colocando o resultado no mesmo índice ==============
+        console.log(retornaSomenteNumeros);
+        retornaSomenteNumeros = retornaSomenteNumeros.map(function(elem, ind, arr){
+            return elem * ind;
+        });
+        console.log(retornaSomenteNumeros);
+
+//      Concatenar array, concatena outra array e outros parâmetros ============
+        var arr2 = arr.concat(retornaSomenteNumeros);
+        console.log(arr2);
+
+//      Transforma a array em string, mesma função que toString(), com a diferença podendo adicionar um caractere para separar
+        var str = arr.join(' - '); // -> elemento separador
+        console.log(str);
+        
+//      Adiciona novo elemento
+        arr.push('novo', 'elemento');
+        console.log(arr);
+
+//      Remove o último elemento, e retorna pra aonde chamou =====================
+        console.log(arr)
+        var ultimoItem = arr.pop();
+        console.log(ultimoItem);
+        console.log(arr)
+
+//      Remove o primeiro item
+        console.log(arr)
+        var primeiroItem = arr.shift();
+        console.log(primeiroItem);
+        console.log(arr)
+
+//      Como o método push(), porém adiciona no início
+        arr.unshift('colocando', 'outro', 'elemento');
+        console.log(arr);
+
+//      Executa a função, soma o elemento ao próximo, espécie de loop
+        retornaSomenteNumeros.shift();
+        console.log(retornaSomenteNumeros);
+        var somaDeArr = retornaSomenteNumeros.reduce(function(anterior, atual){
+            console.log('Anterior: ', anterior,  '  |  Atual: ', atual);
+            return anterior + atual;
+        });
+        console.log('Soma dos elementos: ', somaDeArr);
     </script>
 </body>
 </html>
