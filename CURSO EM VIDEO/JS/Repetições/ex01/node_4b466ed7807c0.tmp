@@ -1,9 +1,0 @@
-//Estrutura de repetição com teste lógico no início =======================
-var valor = 1
-while(valor <= 5){
-   var valorFinal = 7 * 1
-   console.log(`7 x ${valor} = ${valorFinal}`)
-   valor
-}
- console.log= 'Fim do loop'
-
