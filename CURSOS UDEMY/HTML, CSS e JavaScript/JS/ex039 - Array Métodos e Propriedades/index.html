@@ -105,6 +105,24 @@
         });
         console.log('Reduce: ', testeReduce);
         console.log('ReduceRigth: ', testeReduceRight, ' ->  Concatena no sentido contrário');
+
+//      Inverte as posições, modifica o array original
+        var arrReverse = [10, 20, 30];
+        arrReverse.reverse();
+        console.log(arrReverse);
+
+//      Mostra a array a partir da posição colocada no parâmetro
+        console.log(arr2);
+        console.log(arr2.slice(6));//-> O parâmetro indica a posição, não o índice =========
+        console.log(arr2.slice(2, 8));//-> Segundo parâmetro indica o limite ========
+
+//     Com esse método é possível  incluir, remover, incluir elemento em qualquer posição etc...
+/*      Primeiro parâmetro indica a posição em que começa a modificação na array
+        Segundo parâmetro indica quantos elementos deseja excluir
+        A partir do terceiro indica quais elementos deseja adicionar
+ */
+        arrReverse.splice(1, 0, 'Adiciona', 'Método', 'Splice()');
+        console.log(arrReverse);
     </script>
 </body>
 </html>
