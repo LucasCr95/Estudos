@@ -83,7 +83,7 @@
         console.log(primeiroItem);
         console.log(arr)
 
-//      Como o método push(), porém adiciona no início
+//      Igual7 o método push(), porém adiciona no início
         arr.unshift('colocando', 'outro', 'elemento');
         console.log(arr);
 
@@ -95,6 +95,16 @@
             return anterior + atual;
         });
         console.log('Soma dos elementos: ', somaDeArr);
+
+//      Também podendo ser usado para manipular strings
+        var testeReduce = ['1', '2', '3', '4', 5].reduce(function(i, a){
+                return i + a;
+        });
+        var testeReduceRight = ['1', '2', '3', '4', 5].reduceRight(function(i, a){
+                return i + a;
+        });
+        console.log('Reduce: ', testeReduce);
+        console.log('ReduceRigth: ', testeReduceRight, ' ->  Concatena no sentido contrário');
     </script>
 </body>
 </html>
