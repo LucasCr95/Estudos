@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="beluga.js"></script>
+    <script>
+        (function(){
+            window.addEventListener('load', init);
+
+            function init(){
+                var nota1, nota2, nota3, nota4;
+                nota1 = 6;
+                nota2 = 7;
+                nota3 = 8;
+                nota4 = 3;
+
+                let arrNotas = [nota1, nota2, nota3, nota4];
+                console.log(arrNotas);
+
+                var verifica = arrNotas.some(function(elem){
+                    return typeof elem !== 'number';
+                });
+
+                if(verifica === true){
+                    console.log('[DIGITE APENAS NÚMEROS]');
+                }   else{
+                        var caractereInvalido = arrNotas.some(function(elem){
+                        return elem === 0;
+                });
+
+                        if(caractereInvalido === true){
+                            console.log('[SE NOTA = 0, REPROVAÇÃO DIRETA]');
+                        }else{
+                            var resultado = calcularMedia(arrNotas);
+                            console.log(resultado);
+                        }
+                    }
+            }
+
+        })();
+    </script>
+</head>
+<body>
+    <h1>Calcular Média</h1>
+    <main>
+        <form action="#">
+            <label for="nota1">Nota 1</label>
+            <input type="text" id="nota1">
+            <label for="nota2">Nota2</label>
+            <input type="text" id="nota2">
+            <label for="nota3">Nota 3</label>
+            <input type="text" id="nota3">
+            <label for="nota4">Nota 4</label>
+            <input type="text" id="nota4">
+            <input type="submit" id="envio">
+        </form>
+    </main>
+</body>
+</html>
