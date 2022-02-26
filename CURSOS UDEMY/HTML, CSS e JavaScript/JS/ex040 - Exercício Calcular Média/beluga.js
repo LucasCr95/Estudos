@@ -1,14 +1,8 @@
-function calcularMedia(){
-    var result = 0;
-    var x = 0;
-
-    while(x < arguments.length){
-        result += arguments[x];
-        x++;
-    }
-    result /= arguments.length; 
-    
-    return result.toFixed(2); 
+function calcularMedia(n){
+    var resultado = n.reduce(function(anterior, atual){
+        return anterior + atual
+    });
+     return resultado /= n.length;
 }
 
 function sorteiaNumero(n){

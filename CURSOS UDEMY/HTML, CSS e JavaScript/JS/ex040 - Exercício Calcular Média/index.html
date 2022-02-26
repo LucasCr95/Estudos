@@ -7,57 +7,68 @@
     <title>JavaScript</title>
     <link rel="stylesheet" href="style.css">
     <script src="beluga.js"></script>
+    
+</head>
+<body>
+    <h1>Calcular Média</h1>
+    <main>
+        <form action="#" >
+            <label for="nota1">Nota 1</label>
+            <input type="text" class="txtNota" id="nota1">
+
+            <label for="nota2">Nota2</label>
+            <input type="text" class="txtNota" id="nota2">
+
+            <label for="nota3">Nota 3</label>
+            <input type="text" class="txtNota" id="nota3">
+
+            <label for="nota4">Nota 4</label>
+            <input type="text" class="txtNota" id="nota4">
+
+            <input type="submit" id="submit">
+            <div id="msg"></div>
+        </form>
+    </main>
     <script>
         (function(){
             window.addEventListener('load', init);
 
             function init(){
-                var nota1, nota2, nota3, nota4;
-                nota1 = 6;
-                nota2 = 7;
-                nota3 = 8;
-                nota4 = 3;
+                var inicio = document.getElementById('submit');
+                submit.addEventListener('click', comecaPrograma);
+            };
+            function comecaPrograma(){
 
-                let arrNotas = [nota1, nota2, nota3, nota4];
-                console.log(arrNotas);
+                var nota1 = parseInt(document.getElementById('nota1').value);
+                var nota2 = parseInt(document.getElementById('nota2').value);
+                var nota3 = parseInt(document.getElementById('nota3').value);
+                var nota4 = parseInt(document.getElementById('nota4').value);
+
+                var arrNotas = [nota1, nota2, nota3, nota4];
 
                 var verifica = arrNotas.some(function(elem){
-                    return typeof elem !== 'number';
+                    return isNaN(elem);
                 });
 
                 if(verifica === true){
-                    console.log('[DIGITE APENAS NÚMEROS]');
-                }   else{
-                        var caractereInvalido = arrNotas.some(function(elem){
-                        return elem === 0;
+                    alert('[SOMENTE NÚMEROS]');
+                }
+
+                var notaReprova = arrNotas.some(function(elem){
+                    return parseFloat(elem) === 0;
                 });
 
-                        if(caractereInvalido === true){
-                            console.log('[SE NOTA = 0, REPROVAÇÃO DIRETA]');
-                        }else{
-                            var resultado = calcularMedia(arrNotas);
-                            console.log(resultado);
-                        }
-                    }
-            }
+                if(notaReprova === true){
+                    alert('[NOTA IGUAIS A 0, REPROVAÇÃO DIRETA]');
+                }
+
+                var resultado = calcularMedia(arrNotas);
+                var msg = document.getElementById('msg');
+                msg.innerText = 'Resultado: ' + resultado;
+
+            };
 
         })();
     </script>
-</head>
-<body>
-    <h1>Calcular Média</h1>
-    <main>
-        <form action="#">
-            <label for="nota1">Nota 1</label>
-            <input type="text" id="nota1">
-            <label for="nota2">Nota2</label>
-            <input type="text" id="nota2">
-            <label for="nota3">Nota 3</label>
-            <input type="text" id="nota3">
-            <label for="nota4">Nota 4</label>
-            <input type="text" id="nota4">
-            <input type="submit" id="envio">
-        </form>
-    </main>
 </body>
 </html>
