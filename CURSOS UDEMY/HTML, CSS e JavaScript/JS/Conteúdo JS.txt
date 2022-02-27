@@ -31,3 +31,4 @@ debugger 			-> Força uma parada no código
 - Math.cbrt()		-> raiz cúbica
 - Math.randon()		-> número aleatório
 - array.every()		-> Verifica todos os elementos de uma array
+- ... 				-> Expression Operation =============

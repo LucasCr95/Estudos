@@ -46,16 +46,25 @@
             };
 
             function verificacao(arrNotas){
+/* 
                 var verifica = arrNotas.some(function(elem){
                     return isNaN(elem);
                 });
+ */                
+                var verifica = arrNotas.some((elem) => isNaN(elem));
+                
 
                 if(verifica === true){
                     alert('Campo Inválido');
                 } else{
+
+/*                          Arrow Function ==============
+
                         var notaReprova = arrNotas.some(function(elem){
                             return parseFloat(elem) === 0;
                         });
+ */                        
+                        var notaReprova = arrNotas.some((elem) => parseFloat(elem) === 0 );
 
                         if(notaReprova === true){
                             msg.innerText = 'REPROVADO - Caso alguma nota for igual a zero, reprovação direta.';
