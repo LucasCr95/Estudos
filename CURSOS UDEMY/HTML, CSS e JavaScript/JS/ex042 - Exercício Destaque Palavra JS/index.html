@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercício Destaque Palavra Javascript</h1>
+    <main>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptatum cupiditate nulla ipsam laborum nostrum veritatis alias debitis facere quas, nisi aliquam et dolor odio tenetur adipisci quod pariatur in.</p>
+      <p>Lorem ipsum dolor sit amet javascript consectetur, adipisicing elit. Saepe voluptatum cupiditate nulla ipsam laborum nostrum veritatis alias debitis facere quas, nisi aliquam et dolor odio tenetur adipisci quod pariatur in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptatum cupiditate nulla ipsam laborum nostrum veritatis alias debitis facere quas, nisi aliquam et dolor odio tenetur adipisci quod pariatur in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptatum cupiditate nulla ipsam laborum nostrum veritatis alias debitis facere quas, nisi aliquam et dolor odio tenetur adipisci quod pariatur in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, javascript adipisicing elit. Saepe voluptatum cupiditate nulla ipsam laborum nostrum veritatis alias debitis facere quas, nisi aliquam et dolor odio tenetur adipisci quod pariatur in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptatum cupiditate nulla ipsam laborum nostrum veritatis alias debitis facere quas, nisi javascript aliquam et dolor odio tenetur adipisci quod pariatur in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptatum cupiditate nulla ipsam laborum nostrum veritatis alias debitis facere quas, nisi aliquam et dolor odio tenetur adipisci quod pariatur in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptatum cupiditate nulla ipsam laborum nostrum veritatis alias debitis facere quas, nisi aliquam et dolor odio tenetur adipisci quod pariatur in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, javascript adipisicing elit. Saepe voluptatum cupiditate nulla ipsam laborum nostrum veritatis alias debitis facere quas, nisi aliquam et dolor odio tenetur adipisci quod pariatur in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptatum cupiditate nulla ipsam laborum nostrum veritatis alias debitis facere quas, nisi aliquam et dolor odio tenetur adipisci quod pariatur in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptatum cupiditate nulla ipsam laborum nostrum veritatis alias debitis facere quas, nisi aliquam et dolor odio tenetur adipisci quod pariatur in.</p>
+    </main>
+
+    <script>
+        var paragrafos = document.querySelectorAll('p');
+
+        for(var i = 0; paragrafos[i]; i++){
+            var temJS = paragrafos[i].textContent.indexOf('javasript') >= 0;;
+            console.log(temJS);
+
+// .className === substituir a classe do objeto 
+            paragrafos[i].className = temJS ? 'destaque' : '';
+        }
+
+    </script>
+</body>
+</html>

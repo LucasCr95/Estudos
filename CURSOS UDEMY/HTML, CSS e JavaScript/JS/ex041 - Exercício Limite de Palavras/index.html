@@ -26,13 +26,21 @@
 
     <script>
         (function(){
-            var paragrafo = document.querySelectorAll('p');
+            var paragrafos = document.querySelectorAll('p');
             
-            for(var i = 0; paragrafo[i]; i++){
-                var paragrafos;
-                paragrafos += paragrafo[i].textContent + '          ';
+            for(var i = 0; paragrafos[i]; i++){
+                paragrafos[i].innerHTML = formatarParagrafo(paragrafos[i].innerHTML);
             }
-            console.log(paragrafos)
+
+            function formatarParagrafo(texto){
+//      Retorna um array, usando a string como argumento para determinar os indices    
+                var arr = texto.split(' '); 
+
+                if(arr.length > 10){
+                    return arr.slice(0, 10).join(' ') + '...';
+                }
+                return texto;
+            }
         }());
     </script>
 </body>
