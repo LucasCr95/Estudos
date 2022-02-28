@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercício Limite de Palavras</h1>
+    <main>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ullam praesentium laboriosam atque assumenda adipisci alias aliquid quisquam consequuntur placeat, iure excepturi voluptatibus aut hic nihil culpa. Ab, dicta earum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ullam praesentium laboriosam atque assumenda adipisci alias aliquid quisquam consequuntur placeat, iure excepturi voluptatibus aut hic nihil culpa. Ab, dicta earum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ullam praesentium laboriosam atque assumenda adipisci alias aliquid quisquam consequuntur placeat, iure excepturi voluptatibus aut hic nihil culpa. Ab, dicta earum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ullam praesentium laboriosam atque assumenda adipisci alias aliquid quisquam consequuntur placeat, iure excepturi voluptatibus aut hic nihil culpa. Ab, dicta earum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ullam praesentium laboriosam atque assumenda adipisci alias aliquid quisquam consequuntur placeat, iure excepturi voluptatibus aut hic nihil culpa. Ab, dicta earum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ullam praesentium laboriosam atque assumenda adipisci alias aliquid quisquam consequuntur placeat, iure excepturi voluptatibus aut hic nihil culpa. Ab, dicta earum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ullam praesentium laboriosam atque assumenda adipisci alias aliquid quisquam consequuntur placeat, iure excepturi voluptatibus aut hic nihil culpa. Ab, dicta earum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ullam praesentium laboriosam atque assumenda adipisci alias aliquid quisquam consequuntur placeat, iure excepturi voluptatibus aut hic nihil culpa. Ab, dicta earum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ullam praesentium laboriosam atque assumenda adipisci alias aliquid quisquam consequuntur placeat, iure excepturi voluptatibus aut hic nihil culpa. Ab, dicta earum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ullam praesentium laboriosam atque assumenda adipisci alias aliquid quisquam consequuntur placeat, iure excepturi voluptatibus aut hic nihil culpa. Ab, dicta earum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, ullam praesentium laboriosam atque assumenda adipisci alias aliquid quisquam consequuntur placeat, iure excepturi voluptatibus aut hic nihil culpa. Ab, dicta earum.</p>
+
+    </main>
+
+    <script>
+        (function(){
+            var paragrafo = document.querySelectorAll('p');
+            
+            for(var i = 0; paragrafo[i]; i++){
+                var paragrafos;
+                paragrafos += paragrafo[i].textContent + '          ';
+            }
+            console.log(paragrafos)
+        }());
+    </script>
+</body>
+</html>
