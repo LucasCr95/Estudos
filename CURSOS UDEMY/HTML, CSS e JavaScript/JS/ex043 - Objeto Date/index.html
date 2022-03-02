@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function(){
+            window.addEventListener('load', init);
+
+            function init(){
+                var txt = document.getElementById('txt');
+                var minhaData = new Date();
+
+
+                txt.innerHTML = minhaData;
+
+// getDay() ->  dia da semana, sendo domingo = 0 e sábado = 6
+                txt.innerHTML += '<hr> Dia da semana: ' + minhaData.getDay();
+
+// getDate() -> dia do mês
+                txt.innerHTML += '<hr> Dia do mês: ' + minhaData.getDate();
+
+// getMonth() -> Recupera mês, sendo janeiro = 0
+                txt.innerHTML += '<hr> Mês: ' + minhaData.getMonth();
+
+// getFullYear() -> Recupera Ano
+                txt.innerHTML += '<hr> Ano: ' + minhaData.getFullYear();
+
+// getHours() -> Recupera horas
+                txt.innerHTML += '<hr> Horas: ' + minhaData.getHours();
+
+            };
+        })();
+    </script>
+</head>
+<body>
+    <h1>Objeto Date</h1>
+    <main>
+        <div id="txt"></div>
+    </main>
+</body>
+</html>
