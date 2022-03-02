@@ -24,16 +24,17 @@
     </main>
 
     <script>
-        var paragrafos = document.querySelectorAll('p');
+        (function(){
+            var paragrafos = document.querySelectorAll('p');
 
-        for(var i = 0; paragrafos[i]; i++){
-            var temJS = paragrafos[i].textContent.indexOf('javasript') >= 0;;
-            console.log(temJS);
+            for(var i = 0; paragrafos[i]; i++){
+                var temJS = paragrafos[i].textContent.indexOf('javascript') >= 0;;
 
-// .className === substituir a classe do objeto 
-            paragrafos[i].className = temJS ? 'destaque' : '';
-        }
-
+//          .className === substituir a classe do objeto 
+                paragrafos[i].className = temJS ? 'destaque' : '';
+            }
+            
+        })();
     </script>
 </body>
 </html>
