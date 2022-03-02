@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function(){
+            window.addEventListener('load', init);
+
+            function init(){
+                var txt = document.getElementById('txt');
+                var data = new Date();
+                var dia = data.getDate();
+                var mes = data.getMonth() + 1;
+                var ano = data.getFullYear();
+
+                switch(mes){
+                    case 1: 
+                        mes = 'Jan';
+                        break; 
+                    case 2:
+                        mes = 'Fev';
+                        break;
+                    case 3:
+                        mes = 'Mar';
+                        break;
+                    case 4:
+                        mes = 'Abr';
+                        break;
+                    case 5:
+                        mes = 'Mai';
+                        break;
+                    case 6:
+                        mes = 'Jun';
+                        break;
+                    case 7:
+                        mes = 'Jul';
+                        break;
+                    case 8:
+                        mes = 'Ago';
+                        break;
+                    case 9:
+                        mes = 'Set';
+                        break;
+                    case 10:
+                        mes = 'Out';
+                        break;
+                    case 11:
+                        mes = 'Nov';
+                        break;
+                    case 12:
+                        mes = 'Dez';
+                        break;
+                };
+
+                txt.textContent = dia + '/' + mes + '/' + ano;
+            }
+        })();
+    </script>
+</head>
+<body>
+    <h1>Exercício Conversão Data Brasil</h1>
+    <main>
+      <div id="txt"></div>
+    </main>
+</body>
+</html>
