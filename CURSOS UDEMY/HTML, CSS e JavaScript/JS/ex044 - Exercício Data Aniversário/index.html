@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function(){
+            window.addEventListener('load', init);
+
+            function init(){
+                var msg = document.getElementById('txt');
+                var dataAtual = new Date();
+                var anoAtual = dataAtual.getFullYear();
+                const dataAniversário = new Date(anoAtual, 3, 28);
+                var diasRestantes = dataAniversário.getDate() - dataAtual.getDate();
+                var mesesRestantes = dataAniversário.getMonth() - dataAtual.getMonth();
+
+                if(diasRestantes === 0 && mesesRestantes === 0){
+                    txt.textContent = 'PARABÉNS !!!'
+                }else{
+                    txt.textContent = 'Faltam ' + diasRestantes + ' dias e ' + mesesRestantes + ' mês para comemorar a data.' 
+                }
+
+            };
+        })();
+    </script>
+</head>
+<body>
+    <h1>Exercício Data Aniverário</h1>
+    <main>
+      <div id="txt"></div>
+    </main>
+</body>
+</html>
