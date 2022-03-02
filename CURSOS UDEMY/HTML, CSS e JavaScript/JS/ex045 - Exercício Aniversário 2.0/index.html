@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function(){
+            window.addEventListener('load', init);
+
+            function init(){
+                var dataAtual = new Date(2022,3,28);
+                dataAtual.setHours(0);
+                dataAtual.setMinutes(0);
+                dataAtual.setSeconds(0);
+                dataAtual.setMilliseconds(0);
+                var anoAtual = dataAtual.getFullYear();
+                var dataNiver = new Date(anoAtual, 3, 28);
+
+                if(dataNiver.getTime() === dataAtual.getTime()){
+                    txt.innerHTML = '<strong> PARABÉNS !!! </strong>';
+                    return
+                };
+
+                if(dataNiver.getTime() < dataAtual.getTime()){
+                   ++anoAtual
+                   dataNiver = new Date(anoAtual, 3, 28);
+                };
+
+                var restanteTS = dataNiver.getTime() - dataAtual.getTime();
+
+                const UM_DIA = 24 * 60 * 60 * 1000;
+                var restante = restanteTS / UM_DIA;
+
+                txt.textContent = 'Faltam ' + restante + ' dias para a data.'
+            };
+
+        })();
+    </script>
+</head>
+<body>
+    <h1>Exercício Aniversário 2.0</h1>
+    <main>
+      <div id="txt"></div>
+    </main>
+</body>
+</html>
