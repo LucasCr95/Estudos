@@ -32,3 +32,7 @@ debugger 			-> Força uma parada no código
 - Math.randon()		-> número aleatório
 - array.every()		-> Verifica todos os elementos de uma array
 - ... 				-> Spread Operation =============
+- setTimeout		-> Executa uma function em determinado tempo
+- clearTimeout()	-> Contrário do setTimeout
+- setInterval()		-> Cria um intervalo para executar uma function
+- clearInterval		-> Contrário do setInterval
