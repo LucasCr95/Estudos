@@ -2,38 +2,52 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: digitalFont;
+    src: url('fontes/DS-DIGI.TTF') format('truetype'), url(fontes/DS-DIGIB.TTF) format('truetype');
+}
 
 *{
-    margin: 0;
-    padding: 0;
     letter-spacing: 1px;
     font-family: sans-serif;
     font-family: 'Encode Sans Condensed';
 }
 main{
-    padding: 0 2em;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey
 }
 body{
-    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
-#divTeste{
-    background-color: yellow;
-    width: 10em;
-    padding: 1em;
-    margin: 2em auto;
-    display: none;
+#relogio{
+    font-family: 'digitalFont';
+    display: inline-block;
+    background: black;
+    color: rgb(255, 255, 255);
+    padding: .5em;
+    font-size: 5em;
+    border-radius: .5em;
 }
 h1{
     background-color: rgba(11, 11, 71, 0.500);
     color: white;
     text-align: center;
-    margin: 10px 0px;
-    padding: 15px;
+    margin: 2% 0;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2.5em;
     font-variant: small-caps;
     text-decoration: underline;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
 }
+/* 
 h2{
     background-color: rgba(128, 128, 128, 0.500);
     text-align: center;
@@ -176,4 +190,4 @@ input[type=submit]:hover, [type=reset]:hover{
     background-color: green;
     height: 50px;
     clear: both;
-}
+} */

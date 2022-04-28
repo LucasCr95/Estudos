@@ -11,9 +11,14 @@
             window.addEventListener('load', init);
             
             function init(){
-                var timeOut = setTimeout(dispara, 2000);
+                setTimeout(dispara, 2000);
+                setTimeout(esconde, 4000)
             };
             
+            function esconde(){
+                var div = document.getElementById('divTeste');
+                div.style.display = 'none';
+            }
 
             function dispara(){
                 var div = document.querySelector('#divTeste');
