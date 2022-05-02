@@ -11,9 +11,7 @@
 <body>
     <h1>Desafio Cronômetro</h1>
     <main>
-        <div>
-            <p id="cronometro">00:00:00:00</p>
-        </div>
+        <input type="text" id="cronometro">
         <button id="iniciar">Iniciar</button>
         <button id="pausar">Pausar</button>
         <button id="parar">Parar</button>
@@ -21,17 +19,38 @@
         <script>
             (function(){
                 var $cronometro = document.getElementById('cronometro');
-                var $iniciar = document.getElementsById('iniciar');
-                var $pausar = document.getElementsById('pausar');
-                var $parar = document.getElementsById('parar');
+                var $iniciar = document.getElementById('iniciar');
+                $iniciar.addEventListener('click', inicar);
+                var $pausar = document.getElementById('pausar');
+                var $parar = document.getElementById('parar');
+                var msClick = Date.now();
+                
 
-                $iniciar.addEventListener('click', inicia);
-                $pausar.addEventListener('click', pausa);
-                $parar.addEventListener('click', para);
-
-                function inicia(){
-
+                function inicar(){
+                    setInterval(function(){
+                        var msAtual = Date.now();
+                        var msDiferenca = msAtual - msClick; 
+                        $cronometro.value = formata(msDiferenca);
+                    }, 100)
                 }
+
+                function formata(ms){
+                   if(ms < 100){
+                       return ms;
+                   }else if(60000){
+                        var s = parseInt( ms/1000 );
+                        var c = ms - ( s * 1000 );
+                        return s + ':' + c;
+                    } else{
+                        var m = parseInt( ms / 60000 );
+                        var s = parseInt( ms / 1000 - ( m * 60 ) )
+                        var c = parseInt(ms - (s * 1000))
+                        return m + ':' + s + ':' + c;
+                    }
+                }
+
+
+
             })();
         </script>
     </main>
