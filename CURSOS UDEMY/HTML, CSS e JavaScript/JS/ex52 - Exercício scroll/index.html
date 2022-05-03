@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="m">
+    <div class="sRolagem">
+        <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Projetos</a></li>
+        </ul>
+    </div>
+    
+    <h1>Trabalhando com scroll</h1>
+    <main>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, perspiciatis. Necessitatibus consequatur, sunt corporis ipsum quod fugiat, quo architecto iure soluta dolorem optio dolore velit, nisi deleniti impedit sit quia.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, perspiciatis. Necessitatibus consequatur, sunt corporis ipsum quod fugiat, quo architecto iure soluta dolorem optio dolore velit, nisi deleniti impedit sit quia.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, perspiciatis. Necessitatibus consequatur, sunt corporis ipsum quod fugiat, quo architecto iure soluta dolorem optio dolore velit, nisi deleniti impedit sit quia.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, perspiciatis. Necessitatibus consequatur, sunt corporis ipsum quod fugiat, quo architecto iure soluta dolorem optio dolore velit, nisi deleniti impedit sit quia.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, perspiciatis. Necessitatibus consequatur, sunt corporis ipsum quod fugiat, quo architecto iure soluta dolorem optio dolore velit, nisi deleniti impedit sit quia.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, perspiciatis. Necessitatibus consequatur, sunt corporis ipsum quod fugiat, quo architecto iure soluta dolorem optio dolore velit, nisi deleniti impedit sit quia.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, perspiciatis. Necessitatibus consequatur, sunt corporis ipsum quod fugiat, quo architecto iure soluta dolorem optio dolore velit, nisi deleniti impedit sit quia.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, perspiciatis. Necessitatibus consequatur, sunt corporis ipsum quod fugiat, quo architecto iure soluta dolorem optio dolore velit, nisi deleniti impedit sit quia.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, perspiciatis. Necessitatibus consequatur, sunt corporis ipsum quod fugiat, quo architecto iure soluta dolorem optio dolore velit, nisi deleniti impedit sit quia.</p>
+    </main>
+
+    <script>
+        (function(){
+            window.addEventListener('scroll', setupHeader);
+
+            function setupHeader(){
+                var posicao = posicaoScroll();
+
+                if(posicao > 150){
+                    document.body.classList.add('m');
+                }else{
+                    document.body.classList.remove('m');
+                }
+            }    
+
+            function posicaoScroll(){
+                return window.pageYOffset;
+            }
+        })();
+    </script>   
+</body>
+</html>
