@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
-<body class="m">
-    <div class="sRolagem">
+<body class="">
+    <div class="menu">
         <ul>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Inicio</a></li>
@@ -33,21 +33,21 @@
 
     <script>
         (function(){
-            window.addEventListener('scroll', setupHeader);
+           var $menu = document.querySelector('#menu');
+           window.addEventListener('scroll', setupNav);
 
-            function setupHeader(){
-                var posicao = posicaoScroll();
-
-                if(posicao > 150){
+           function setupNav(){
+               var rolagem = vRolagem();
+                if(rolagem > 30){
                     document.body.classList.add('m');
-                }else{
+                } else{
                     document.body.classList.remove('m');
                 }
-            }    
+           }
 
-            function posicaoScroll(){
-                return window.pageYOffset;
-            }
+           function vRolagem(){
+               return window.pageYOffset;
+           }
         })();
     </script>   
 </body>
