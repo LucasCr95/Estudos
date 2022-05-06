@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Saltos</h1>
+    <main>
+      
+    </main>
+    <script>
+
+//      return -> sai da função
+        function testeSaltos(){
+            for(var i = 0; i <= 10; i++){
+                console.log(i);
+                if(i === 5){
+                    return '-------------';
+                }
+            }
+        }
+        console.log(testeSaltos());
+
+//      break -> sai do loop, mas não sai da função
+        function testeSaltosDois(){
+            for(var i = 0; i <= 10; i++){
+                console.log(i);
+                if(i === 5){
+                    break;  
+                }
+            }
+            console.log('-------------');
+        }
+        testeSaltosDois();
+
+//      continue -> continua com o loop depois da verificação
+        function testeSaltosTres(){
+            for(var i = 0; i < 10; i++){
+                if(i === 5){
+                    continue;
+                }
+                console.log(i)
+            }
+            console.log('---------------');
+        }
+        testeSaltosTres();
+    </script>
+</body>
+</html>
