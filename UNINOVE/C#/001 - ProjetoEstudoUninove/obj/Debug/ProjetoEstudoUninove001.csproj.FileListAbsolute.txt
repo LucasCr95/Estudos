@@ -1,0 +1,10 @@
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\ProjetoEstudoUninove001\bin\Debug\ProjetoEstudoUninove001.exe.config
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\ProjetoEstudoUninove001\bin\Debug\ProjetoEstudoUninove001.exe
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\ProjetoEstudoUninove001\bin\Debug\ProjetoEstudoUninove001.pdb
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\ProjetoEstudoUninove001\obj\Debug\ProjetoEstudoUninove001.csproj.AssemblyReference.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\ProjetoEstudoUninove001\obj\Debug\ProjetoEstudoUninove001.Form1.resources
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\ProjetoEstudoUninove001\obj\Debug\ProjetoEstudoUninove001.Properties.Resources.resources
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\ProjetoEstudoUninove001\obj\Debug\ProjetoEstudoUninove001.csproj.GenerateResource.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\ProjetoEstudoUninove001\obj\Debug\ProjetoEstudoUninove001.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\ProjetoEstudoUninove001\obj\Debug\ProjetoEstudoUninove001.exe
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\ProjetoEstudoUninove001\obj\Debug\ProjetoEstudoUninove001.pdb

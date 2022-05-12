@@ -1,0 +1,17 @@
+ANOTAÇÕES C#
+
+Form.cs 		-> Contém o código C# que define o comportamento do formulário
+Form.Desogner.cs 	-> Contém  o codigo que define o formulário e seus objetos (controles)
+Program.cs 		-> Possui o código que inicia o programa.
+
+
+			*** CLASSES/MÉTODOS ***
+MessageBox.Show		-> Apresenta uma mensagem em bloco.
+
+
+			*** PROPRIEDADES ***
+
+variavel.Text		-> Recuperar valor de texto.
+Location		-> Define o posionamento (eixo X e Y)
+Size			-> Define o comprimento e largura do controle (Width e Height)
+ReadOlny		-> Define o controle TextBox (Editado - false, somente leitura - true)
