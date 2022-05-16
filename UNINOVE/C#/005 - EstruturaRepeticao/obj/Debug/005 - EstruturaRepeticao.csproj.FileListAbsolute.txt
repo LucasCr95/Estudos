@@ -1,0 +1,10 @@
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\005 - EstruturaRepeticao\bin\Debug\005 - EstruturaRepeticao.exe.config
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\005 - EstruturaRepeticao\bin\Debug\005 - EstruturaRepeticao.exe
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\005 - EstruturaRepeticao\bin\Debug\005 - EstruturaRepeticao.pdb
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\005 - EstruturaRepeticao\obj\Debug\005 - EstruturaRepeticao.csproj.AssemblyReference.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\005 - EstruturaRepeticao\obj\Debug\_005___EstruturaRepeticao.Seleciona.resources
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\005 - EstruturaRepeticao\obj\Debug\_005___EstruturaRepeticao.Properties.Resources.resources
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\005 - EstruturaRepeticao\obj\Debug\005 - EstruturaRepeticao.csproj.GenerateResource.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\005 - EstruturaRepeticao\obj\Debug\005 - EstruturaRepeticao.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\005 - EstruturaRepeticao\obj\Debug\005 - EstruturaRepeticao.exe
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\005 - EstruturaRepeticao\obj\Debug\005 - EstruturaRepeticao.pdb

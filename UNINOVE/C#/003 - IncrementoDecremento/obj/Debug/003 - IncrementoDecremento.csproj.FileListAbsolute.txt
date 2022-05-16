@@ -1,0 +1,10 @@
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\003 - IncrementoDecremento\bin\Debug\003 - IncrementoDecremento.exe.config
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\003 - IncrementoDecremento\bin\Debug\003 - IncrementoDecremento.exe
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\003 - IncrementoDecremento\bin\Debug\003 - IncrementoDecremento.pdb
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\003 - IncrementoDecremento\obj\Debug\003 - IncrementoDecremento.csproj.AssemblyReference.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\003 - IncrementoDecremento\obj\Debug\_003___IncrementoDecremento.Form1.resources
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\003 - IncrementoDecremento\obj\Debug\_003___IncrementoDecremento.Properties.Resources.resources
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\003 - IncrementoDecremento\obj\Debug\003 - IncrementoDecremento.csproj.GenerateResource.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\003 - IncrementoDecremento\obj\Debug\003 - IncrementoDecremento.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\003 - IncrementoDecremento\obj\Debug\003 - IncrementoDecremento.exe
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\003 - IncrementoDecremento\obj\Debug\003 - IncrementoDecremento.pdb
