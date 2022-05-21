@@ -7,3 +7,4 @@ C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\007 - Projeto
 C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\007 - ProjetoLinguagensProgramacao\obj\Debug\007 - ProjetoLinguagensProgramacao.csproj.CoreCompileInputs.cache
 C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\007 - ProjetoLinguagensProgramacao\obj\Debug\007 - ProjetoLinguagensProgramacao.exe
 C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\007 - ProjetoLinguagensProgramacao\obj\Debug\007 - ProjetoLinguagensProgramacao.pdb
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\007 - ProjetoLinguagensProgramacao\obj\Debug\007 - ProjetoLinguagensProgramacao.csproj.AssemblyReference.cache
