@@ -1,0 +1,10 @@
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\012 - VerificaçãoMaiorNúmero\bin\Debug\012 - VerificaçãoMaiorNúmero.exe.config
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\012 - VerificaçãoMaiorNúmero\bin\Debug\012 - VerificaçãoMaiorNúmero.exe
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\012 - VerificaçãoMaiorNúmero\bin\Debug\012 - VerificaçãoMaiorNúmero.pdb
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\012 - VerificaçãoMaiorNúmero\obj\Debug\012 - VerificaçãoMaiorNúmero.csproj.AssemblyReference.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\012 - VerificaçãoMaiorNúmero\obj\Debug\_012___VerificaçãoMaiorNúmero.Form1.resources
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\012 - VerificaçãoMaiorNúmero\obj\Debug\_012___VerificaçãoMaiorNúmero.Properties.Resources.resources
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\012 - VerificaçãoMaiorNúmero\obj\Debug\012 - VerificaçãoMaiorNúmero.csproj.GenerateResource.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\012 - VerificaçãoMaiorNúmero\obj\Debug\012 - VerificaçãoMaiorNúmero.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\012 - VerificaçãoMaiorNúmero\obj\Debug\012 - VerificaçãoMaiorNúmero.exe
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\012 - VerificaçãoMaiorNúmero\obj\Debug\012 - VerificaçãoMaiorNúmero.pdb
