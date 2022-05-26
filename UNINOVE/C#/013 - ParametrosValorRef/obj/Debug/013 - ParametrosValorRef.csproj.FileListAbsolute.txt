@@ -1,0 +1,10 @@
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\013 - ParametrosValorRef\bin\Debug\013 - ParametrosValorRef.exe.config
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\013 - ParametrosValorRef\bin\Debug\013 - ParametrosValorRef.exe
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\013 - ParametrosValorRef\bin\Debug\013 - ParametrosValorRef.pdb
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\013 - ParametrosValorRef\obj\Debug\013 - ParametrosValorRef.csproj.AssemblyReference.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\013 - ParametrosValorRef\obj\Debug\_013___ParametrosValorRef.Form1.resources
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\013 - ParametrosValorRef\obj\Debug\_013___ParametrosValorRef.Properties.Resources.resources
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\013 - ParametrosValorRef\obj\Debug\013 - ParametrosValorRef.csproj.GenerateResource.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\013 - ParametrosValorRef\obj\Debug\013 - ParametrosValorRef.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\013 - ParametrosValorRef\obj\Debug\013 - ParametrosValorRef.exe
+C:\Users\lucas\OneDrive\Documentos\LUCAS\GitHub\Estudos\UNINOVE\C#\013 - ParametrosValorRef\obj\Debug\013 - ParametrosValorRef.pdb
