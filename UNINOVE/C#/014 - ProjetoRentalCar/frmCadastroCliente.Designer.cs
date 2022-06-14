@@ -120,6 +120,7 @@ namespace _014___ProjetoRentalCar
             this.btnIncluir.TabIndex = 9;
             this.btnIncluir.Text = "Incluir";
             this.btnIncluir.UseVisualStyleBackColor = true;
+            this.btnIncluir.Click += new System.EventHandler(this.btnIncluir_Click);
             // 
             // btnAlterar
             // 
@@ -129,6 +130,7 @@ namespace _014___ProjetoRentalCar
             this.btnAlterar.TabIndex = 10;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnExcluir
             // 
@@ -138,6 +140,7 @@ namespace _014___ProjetoRentalCar
             this.btnExcluir.TabIndex = 11;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnConsultar
             // 
@@ -147,6 +150,7 @@ namespace _014___ProjetoRentalCar
             this.btnConsultar.TabIndex = 12;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // btnFechar
             // 
@@ -156,6 +160,7 @@ namespace _014___ProjetoRentalCar
             this.btnFechar.TabIndex = 13;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // frmCadastroCliente
             // 
@@ -177,6 +182,7 @@ namespace _014___ProjetoRentalCar
             this.Controls.Add(this.lblCodigo);
             this.Name = "frmCadastroCliente";
             this.Text = "Cadastro Cliente";
+            this.Load += new System.EventHandler(this.frmCadastroCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
