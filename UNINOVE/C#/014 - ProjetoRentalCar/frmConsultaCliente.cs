@@ -70,5 +70,63 @@ namespace _014___ProjetoRentalCar
             }
 
         }
+
+        private void btnSelecionar_Click(object sender, EventArgs e)
+        {
+            // Variável armazena código cliente no DataGridView
+            string codigoCliente;
+
+            // Seleciona código da linha atual da coluna [0] do DataGridView
+            codigoCliente = dgvCliente.CurrentRow.Cells[0].Value.ToString();
+
+            string sqlQuery;
+
+            SqlConnection conClienteConsulta = Conexao.getConnection();
+
+            SqlDataReader dtr = null;
+
+            sqlQuery = "SELECT id_cliente, nome, cpf, dt_nasc FROM cliente WHERE id_cliente = @id_cliente";
+
+            try
+            {
+                conClienteConsulta.Open();
+
+                SqlCommand cmd = new SqlCommand(sqlQuery, conClienteConsulta);
+
+                cmd.Parameters.Add(new SqlParameter("@id_cliente", Convert.ToInt32(codigoCliente)));
+
+                dtr = cmd.ExecuteReader();
+
+                // Se retornou registro, preenche a tela do frmCadastroCliente
+                if (dtr.Read())
+                {
+                    frmCliente.txtCodigo.Text = dtr["ID_CLIENTE"].ToString();
+                    frmCliente.txtNome.Text = dtr["NOME"].ToString();
+                    frmCliente.mskTxtNasc.Text = dtr["DT_NASC"].ToString();
+                    frmCliente.mksTxtCPF.Text = dtr["CPF"].ToString();
+                }
+            }
+            catch(Exception ex)
+            {
+                // Exibe a mensagem da execeção
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                if(dtr != null)
+                {
+                    dtr.Close();
+                }
+                if(conClienteConsulta != null)
+                {
+                    conClienteConsulta.Close();
+                }
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
