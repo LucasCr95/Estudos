@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classes</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>Trabalhando com classes</h1>
@@ -16,12 +17,11 @@
             public $ra;
             public $endereco;
 
-            //CONSTRUTOR DA CLASSE
-            function aluno(){
-                $this -> DadosAluno();
+            function Aluno(){
+                $this -> dadosAluno();
             }
 
-            function DadosAluno(){
+            function dadosAluno(){
                 $this -> nome = "Milena";
                 $this -> ra = "745854";
                 $this -> endereco = "Rua Martins Almeida, 161 - SP";
