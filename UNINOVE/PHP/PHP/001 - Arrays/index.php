@@ -73,6 +73,65 @@
             "<br><strong>Descrição: </strong>" . $alunosTres["SI"]["descricao"] . 
             "<br><strong>Disciplina: </strong>" . $alunosTres["SI"]["disciplina"]
         );
+
+        $marcas = array("Vans", "Nike", "DC", "Adidas", "Starter", "Hocks", "Element", "DC", "New Era", "Vans", "Starter");
+
+        
+        //ELIMINA VALORES REPETIDOS =============
+        echo "<hr>";
+        echo "<h3>array_unique</h3>";
+
+        $result = array_unique($marcas);
+        foreach($result as $x => $x_value){
+            echo "Marca: [" . $x . "] = " . $x_value . "<br>"; 
+        }
+
+        // ORDEM CRESCENTE DE ACORDO COM VALORES =============
+        echo "<hr>";
+        echo "<h3>asort</h3>";
+
+        asort($marcas);
+        foreach($marcas as $x => $x_value){
+            echo "Marca[" . $x . "] = " . $x_value . "<br>";
+        }
+
+        //ORDEM DESCRECENTE DE ACORDO COM OS VALORES
+        echo "<hr>";
+        echo "<h3>arsort</h3>";
+
+        arsort($marcas);
+        foreach($marcas as $x => $x_value){
+            echo "Marca[" . $x .  "] = " . $x_value . "<br>";
+        }
+
+        //RETORNA A QUANTIDADE DE ELEMENTOS DENTRO DE UM ARRAY
+        echo "<hr>";
+        echo "<h3>count</h3>";
+
+        $filtro = array_unique($marcas);
+        $i = count($filtro);
+        echo "Foram escontradas " . $i . " marcas cadastradas.";
+
+        //ORDEM CRESCENTE DE ACORDO COM OS ÍNDICES
+        echo "<hr>";
+        echo "<h3>ksort</h3>";
+
+        $filtro = array_unique($marcas);
+        ksort($filtro);
+        foreach($filtro as $x => $x_value){
+            echo "Marcas[" . $x . "] = " . $x_value . "<br>";
+        }
+
+        //ORDEM DESCRECENTE DE ACORDO COM OS ÍNDICES
+        echo "<hr>";
+        echo "<h3>krsort</h3>";
+
+        $filtro = array_unique($marcas);
+        krsort($filtro);
+        foreach($filtro as $x => $x_value){
+            echo "Marcas[" . $x . "] = " . $x_value . "<br>";
+        }
+
     ?>
 </body>
 </html>
