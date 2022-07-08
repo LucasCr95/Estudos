@@ -95,7 +95,7 @@
             echo "Marca[" . $x . "] = " . $x_value . "<br>";
         }
 
-        //ORDEM DESCRECENTE DE ACORDO COM OS VALORES
+        //ORDEM DECRESCENTE DE ACORDO COM OS VALORES
         echo "<hr>";
         echo "<h3>arsort</h3>";
 
@@ -122,7 +122,7 @@
             echo "Marcas[" . $x . "] = " . $x_value . "<br>";
         }
 
-        //ORDEM DESCRECENTE DE ACORDO COM OS ÍNDICES
+        //ORDEM DECRESCENTE DE ACORDO COM OS ÍNDICES
         echo "<hr>";
         echo "<h3>krsort</h3>";
 
